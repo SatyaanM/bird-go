@@ -1,3 +1,20 @@
+# info2602-project
+Group Project for INFO 2602 2021/2022
+Group 5 - Bird Go
+
+## Members:
+* Satish Maharaj    - Lead/Marketing
+* Joshua Dolabaille - UI Design/Marketing
+* Tristan Leid      - UI Design/UI Implementation
+* Satyaan Maharaj   - DevOps/Server-side Implementation
+
+[Project Specification Document](https://docs.google.com/document/d/1VojWkX_jlz8uzoqNjU4KnbcqhapnzJmw8bgLuYBfiHQ/edit#)
+
+[Bird Go document](https://docs.google.com/document/d/10Dqk6NZHS_9ZsLub9TQ_PUF0Pwjb6E8rsMAITRAxwvk/edit?usp=sharing)
+
+---
+
+
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/uwidcit/flaskmvc)
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
