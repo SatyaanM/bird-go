@@ -1,4 +1,4 @@
-# info2602-project
+# INFO2602-project
 Group Project for INFO 2602 2021/2022
 Group 5 - Bird Go
 
