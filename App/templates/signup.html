@@ -1,6 +1,6 @@
 {% extends "prelogin.html" %}
-{% block title %}Login{% endblock %}
-{% block page %}Login{% endblock %}
+{% block title %}Bird Go Signup{% endblock %}
+{% block page %}Signup{% endblock %}
 
 {{ super() }}
 
@@ -18,39 +18,13 @@ Curabitur et congue erat. In a diam sit amet ligula scelerisque faucibus. Nam le
         </div>
         <div class="row">
 
-            <div class="col s6 offset-s3 blue-grey darken-4" style="outline: black 1px solid; height: 500px;border-radius: 20px;">
+            <div class="col s6 offset-s3 blue-grey darken-4" style="height: 500px;border-radius: 20px;">
                 <div class="row">
-                    <form id="myForm" class="col s12 m8 offset-m2" method="POST" action="/signup">
-                        {{ form.csrf_token }}
-            
-                        <div class="input-field col s12 m8 offset-m2"> 
-                          {{ form.username(size=20, class="validate") }}
-                          {{ form.username.label }}
-                        </div>
-            
-                        <div class="input-field col s12 m8 offset-m2">
-                          {{ form.email(size=50, class="validate") }}
-                          {{ form.email.label }}
-                        </div>
-            
-                        <div class="input-field col s12 m8 offset-m2">
-                          {{ form.password(size=20, class="validate") }}
-                          {{ form.password.label }}
-                        </div>
-            
-                        <div class="input-field col s12 m8 offset-m2">
-                          {{ form.confirm(size=20, class="validate") }}
-                          {{ form.confirm.label }}
-                        </div>
-            
-                        <div class="input-field col s12 m8 offset-m2">
-                          {{form.submit}}
-                        </div> 
-                    </form>
+                    Form to go here
                 </div>
                 <div class="row" style="text-align: center;">
                     <p style="margin:0px;">Already have an account?</p>
-                    <a style="margin:0px;" href="/login">Login</a>
+                    <a style="margin:0px;" href="/">Login</a>
                 </div>
             </div>
 
