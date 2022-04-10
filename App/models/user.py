@@ -16,7 +16,7 @@ class User(db.Model):
             'id': self.id,
             'username': self.username,
             'num_spottings': self.get_num_spottings(),
-            'spottings': self.spottings
+            # 'spottings': self.spottings
         }
 
     def set_password(self, password):
