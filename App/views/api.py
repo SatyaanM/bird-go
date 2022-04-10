@@ -9,3 +9,11 @@ def login():
 @api_views.route('/signup', methods=['GET'])
 def signup():
     return render_template('signup.html')
+
+@api_views.route('/account')
+def account():
+    return render_template('account.html')
+
+@api_views.route('/map', methods=['GET'])
+def map():
+    return render_template('map.html')

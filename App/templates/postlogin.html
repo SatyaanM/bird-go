@@ -18,9 +18,9 @@
         <a href="#!" class="brand-logo center">{% block page %}{% endblock %}</a>
         <div class="nav-wrapper">
             <ul id="nav-mobile" class="left">
-                <li><a href="/">Home</a></li>
-                <li><a href="/users">Users Jinja</a></li>
-                <li><a href="/static/users">Users JS</a></li>
+                <li><a href="/">Signout</a></li>
+                <li><a href="/account">Account</a></li>
+                <li><a href="/map">Map</a></li>
             </ul>
         </div>
       </div>
@@ -28,7 +28,7 @@
     
     {% with messages = get_flashed_messages() %}
     {% if messages %}
-    <nav class="white black-text" style="padding: 10px">
+    <nav id="flashed_message" class="white black-text">
       <div class="nav-wrapper">
           <ul class="flashes">
           {% for message in messages %}
