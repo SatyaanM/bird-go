@@ -27,7 +27,23 @@
 
             <div class="col s6 offset-s3 blue-grey darken-4 prelogin_box">
                 <div class="row">
-                    Form to go here
+                    <form class="col s12 m8 offset-m2" method="POST" action="/login">
+                        {{ form.csrf_token }}
+            
+                        <div class="input-field col s12 m8 offset-m2"> 
+                          {{ form.username(size=20, class="validate") }}
+                          {{ form.username.label }}
+                        </div>
+            
+                        <div class="input-field col s12 m8 offset-m2">
+                          {{ form.password(size=20, class="validate") }}
+                          {{ form.password.label }}
+                        </div>
+            
+                        <div class="input-field col s12 m8 offset-m2">
+                          {{form.submit}}
+                        </div> 
+                    </form>
                 </div>
                 <div class="row" style="text-align: center;">
                     <p style="margin:0px;">Don't have an account?</p>
