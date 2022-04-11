@@ -1,5 +1,5 @@
 from flask import Blueprint, redirect, render_template, request, send_from_directory
-from forms import SignUp, LogIn
+from App.forms import SignUp, LogIn
 
 api_views = Blueprint('api_views', __name__, template_folder='../templates')
 
