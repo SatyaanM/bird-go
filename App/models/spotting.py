@@ -1,9 +1,10 @@
 from App.database import db
 from datetime import datetime
 
+
 class Spotting(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
     bird_name = db.Column(db.String, nullable=False)
     lat = db.Column(db.Float, nullable=False)
     long = db.Column(db.Float, nullable=False)
@@ -19,13 +20,13 @@ class Spotting(db.Model):
 
     def toDict(self):
         return {
-            'id': self.id,
-            'user_id': self.user_id,
-            'bird_name': self.bird_name,
-            'latitude': self.lat,
-            'longitude': self.long,
-            'spotting_time': self.time,
-            'spotting_details': self.details,
+            "id": self.id,
+            "user_id": self.user_id,
+            "bird_name": self.bird_name,
+            "latitude": self.lat,
+            "longitude": self.long,
+            "spotting_time": self.time,
+            "spotting_details": self.details,
         }
 
     def set_time(self):
