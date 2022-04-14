@@ -2,19 +2,20 @@ from App.models import Spotting
 from App.database import db
 import json
 
+
+# creates a new Spotting object and stores it in database
+def create_spotting(user_id, bird_name, lat, long, details):
+    new_spotting = Spotting(
+        user_id=user_id, bird_name=bird_name, lat=lat, long=long, details=details
+    )
+    new_spotting.set_time()
+    db.session.add(new_spotting)
+    db.session.commit()
+
+
 # returns a list of all spottings
 def get_all_spottings():
     return Spotting.query.all()
-
-
-# creates a new Spotting object and stores it in databse
-def create_spotting(user_id, bird_name, lat, long, details):
-    newSpotting = Spotting(
-        user_id=user_id, bird_name=bird_name, lat=lat, long=long, details=details
-    )
-    newSpotting.set_time()
-    db.session.add(newSpotting)
-    db.session.commit()
 
 
 def get_all_spottings_json():
@@ -25,7 +26,13 @@ def get_all_spottings_json():
     return spottings
 
 
-def get_user_spottings(user_id):
+def get_spottings_by_user(user_id):
     spottings = Spotting.query.filter_by(user_id=user_id).all()
     spottings = [spotting.toDict() for spotting in spottings]
-    return json.dumps(spottings)
+    return spottings
+
+
+def get_spottings_by_bird(bird_name):
+    spottings = Spotting.query.filter_by(bird_name=bird_name).all()
+    spottings = [spotting.toDict() for spotting in spottings]
+    return spottings
