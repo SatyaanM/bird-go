@@ -2,6 +2,12 @@
     padding: 10px;
 }
 
+#map{
+    background-color: antiquewhite; 
+    height: 500px; 
+    width:100%;
+}
+
 .box{
     height: 500px;
     border-radius: 20px;
@@ -10,7 +16,9 @@
 .floating_button{
     border: 1px black solid; 
     padding:5px; 
+    margin: 5px;
     border-radius: 20px; 
     background-color: cadetblue; 
     color: aliceblue;
 }
+

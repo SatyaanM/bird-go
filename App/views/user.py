@@ -15,6 +15,7 @@ from App.controllers import (
     authenticate,
     login_user,
     logout_user,
+    get_spottings_by_user
 )
 
 from flask_login import login_required
@@ -76,8 +77,12 @@ def logout_action():
 @user_views.route("/account", methods=["GET"])
 @login_required
 def account():
-    return render_template("account.html")
-
+    username = session['username']
+    spottings = get_spottings_by_user(session['user_id'])
+    number_spottings=0
+    for spotting in spottings:
+        number_spottings += 1
+    return render_template("account.html", username=username, spottings=spottings, number_spottings=number_spottings)
 
 @user_views.route('/map', methods=['GET'])
 def map_page():

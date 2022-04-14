@@ -5,12 +5,15 @@
 {{ super() }}
 
 {% block content %}
-    <div class="row blue-grey darken-4 box">
+    <div class="row blue-grey darken-4 box" style="padding: 10px; margin: 10px">
         <div class="row">
-            <h1 style="color:white">User account info:</h1>
+            <h1 style="color:white">{{username}} account info:</h1>
         </div>
         <div class="row">
-            <p style="color:white">Total spottings:{{}} </p>
+            <p style="color:white">Total spottings: {{number_spottings}}</p>
+        </div>
+        <div class="row">
+            <p style="color:white">Next info item: </p>
         </div>
         <div class="row">
             <a href="/logout" class="floating_button">Log out</a>
