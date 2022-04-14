@@ -5,6 +5,7 @@ from flask import (
     flash,
     redirect,
     url_for,
+    session
 )
 
 from App.controllers import (
@@ -13,6 +14,7 @@ from App.controllers import (
     create_user,
     authenticate,
     login_user,
+    logout_user,
 )
 
 from flask_login import login_required
@@ -57,9 +59,17 @@ def login_action():
         if user is not None:
             flash("Logged in successfully")
             login_user(user, False)
+            session['username'] = user.username
+            session['user_id'] = user.id
             return redirect(url_for("user_views.account"))
         flash("Invalid Credentials")
         return redirect(url_for("user_views.index"))
+
+
+@user_views.route("/logout")
+def logout_action():
+    logout_user()
+    return redirect(url_for("user_views.index"))
 
 
 # user must be logged in to view account
@@ -72,3 +82,5 @@ def account():
 @user_views.route('/map', methods=['GET'])
 def map_page():
     return render_template('map.html')
+
+
