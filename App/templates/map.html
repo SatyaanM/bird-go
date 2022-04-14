@@ -5,7 +5,7 @@
 {{ super() }}
 
 {% block content %}
-    <div  style="width:100%">
+    <div  id="map" style="width:100%">
         <!--
         <div id="sidebar" class="col s2 blue-grey darken-4">
             <img src="logo.jpg" alt="Logo" style="border-radius: 50%;
@@ -15,10 +15,6 @@
             <a href="#" class="floating_button">Spottings</a>
         </div>
         -->
-        <div id="map">
-            <div>
-                <p>Hello</p>
-            </div>
-        </div>
+        {{myMap.html}}
     </div>
 {% endblock %}

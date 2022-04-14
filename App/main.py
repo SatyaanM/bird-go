@@ -6,7 +6,7 @@ from flask_cors import CORS
 from werkzeug.utils import secure_filename
 from werkzeug.datastructures import FileStorage
 from datetime import timedelta
-
+from flask_googlemaps import GoogleMaps
 
 from App.database import init_db, get_migrate
 
@@ -54,6 +54,7 @@ def create_app(config={}):
     init_db(app)
     setup_jwt(app)
     app.app_context().push()
+    GoogleMaps(app, key="AIzaSyD9LUWu6xWQHMDQrtB68oRYwtaq6gSQi8I")
     return app
 
 
@@ -67,3 +68,4 @@ def load_user(user_id):
 
 
 migrate = get_migrate(app)
+
