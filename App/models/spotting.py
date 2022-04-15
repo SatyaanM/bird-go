@@ -23,10 +23,10 @@ class Spotting(db.Model):
             "id": self.id,
             "user_id": self.user_id,
             "bird_name": self.bird_name,
-            "latitude": self.lat,
-            "longitude": self.long,
-            "spotting_time": self.time,
-            "spotting_details": self.details,
+            "lat": self.lat,
+            "long": self.long,
+            "time": self.time,
+            "details": self.details,
         }
 
     def set_time(self):

@@ -80,12 +80,8 @@ def logout_action():
 @user_views.route("/account", methods=["GET"])
 @login_required
 def account():
-    username = session['username']
     spottings = get_spottings_by_user(session['user_id'])
-    number_spottings=0
-    for spotting in spottings:
-        number_spottings += 1
-    return render_template("account.html", username=username, spottings=spottings, number_spottings=number_spottings)
+    return render_template("account.html", spottings=spottings)
 
 @user_views.route('/map', methods=['GET'])
 def map_page():
