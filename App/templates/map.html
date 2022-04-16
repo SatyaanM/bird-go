@@ -9,8 +9,8 @@
     <div  id="map" style="width:100%">
         {{ googlemap(
         "all-spottings-map",
-        markers[0].lat,
-        markers[0].lng,
+        lat=user_coords[0],
+        lng=user_coords[1],
         markers=markers,
         center_on_user_location=True,
         streetview_control=False,

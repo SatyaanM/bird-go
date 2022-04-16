@@ -30,3 +30,10 @@ def set_user_location(uid, lat, long):
     user.set_location(lat, long)
     db.session.add(user)
     db.session.commit()
+
+
+def get_user_location(uid):
+    user = User.query.filter_by(id=uid).first()
+    if user is None:
+        return
+    return [user.latitude, user.longitude]

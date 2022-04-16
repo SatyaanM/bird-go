@@ -17,6 +17,7 @@ from App.controllers import (
     logout_user,
     get_spottings_by_user,
     get_all_spottings_json,
+    get_user_location,
 )
 
 from flask_login import login_required
@@ -81,6 +82,7 @@ def logout_action():
 @user_views.route("/account", methods=["GET"])
 @login_required
 def account():
+    user_coords = get_user_location(session['user_id'])
     spottings = get_spottings_by_user(session['user_id'])
     markers = [{
         'lat': spotting['lat'],
@@ -88,22 +90,24 @@ def account():
         'infobox': f"{spotting['bird_name']} spotted at {spotting['time']}. Details: {spotting['details']}"
     } for spotting in spottings]
 
-    return render_template("account.html", spottings=spottings, markers=markers)
+    return render_template("account.html", spottings=spottings, markers=markers, user_coords=user_coords)
 
 
 @user_views.route('/map', methods=['GET'])
 @login_required
 def map_page():
     spottings = get_all_spottings_json()
+    user_coords = get_user_location(session['user_id'])
     markers = [{
         'lat': spotting['lat'],
         'lng': spotting['long'],
         'infobox': f"{spotting['bird_name']} spotted at {spotting['time']}. Details: {spotting['details']}"
     } for spotting in spottings]
-    return render_template('map.html', markers=markers)
+    return render_template('map.html', markers=markers, user_coords=user_coords)
 
 
 @user_views.route('/post-spotting', methods=['GET'])
 @login_required
 def post_spotting_page():
-    return render_template('post-spotting.html')
+    user_coords = get_user_location(session['user_id'])
+    return render_template('post-spotting.html', user_coords=user_coords)

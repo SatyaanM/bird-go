@@ -7,9 +7,10 @@ api_views = Blueprint("api_views", __name__, template_folder="../templates")
 
 
 @api_views.route('/user-location', methods=['POST'])
-def set_user_location():
+def set_user_location_route():
     data = request.get_json()
     set_user_location(session['user_id'], data['lat'], data['long'])
+    return json.dumps({"location": f"({data['lat']}, {data['long']})"}), 200
 
 
 @api_views.route('/spottings', methods=['GET'])

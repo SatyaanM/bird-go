@@ -24,6 +24,8 @@ class User(db.Model, UserMixin):
             "id": self.id,
             "username": self.username,
             "num_spottings": self.get_num_spottings(),
+            "latitude": self.latitude,
+            "longitude": self.longitude,
         }
 
     def set_password(self, password):

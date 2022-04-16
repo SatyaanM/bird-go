@@ -13,6 +13,33 @@
 
   </head>
   <body class="#01579b light-blue darken-4">
+  <script>
+      var latitude = 0;
+      var longitude = 0;
+
+      function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(setPosition);
+        } else {
+            alert("Geoposition failed.");
+        }
+      }
+      function setPosition(position) {
+          latitude = position.coords.latitude;
+          longitude = position.coords.longitude;
+          const data = {lat: latitude, long: longitude};
+
+          fetch('/user-location', {
+              method: "POST",
+              body: JSON.stringify(data),
+              headers: {"Content-type": "application/json; charset=UTF-8"}
+          })
+          .then(response => response.json())
+          .then(json => console.log(json))
+          .catch(err => console.log("Request Failed", err));
+      }
+      window.onload = getLocation();
+  </script>
     <nav class="blue-grey darken-4">
       <div class="nav-wrapper">
         <a href="#!" class="brand-logo center">{% block page %}{% endblock %}</a>

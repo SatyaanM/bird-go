@@ -15,8 +15,9 @@
     <div  id="map" style="width:100%">
         {{ googlemap(
         "post-spotting-map",
-        lat=1,
-        lng=1,
+        lat=user_coords[0],
+        lng=user_coords[1],
+        markers = [(user_coords[0], user_coords[1])],
         center_on_user_location=True,
         streetview_control=False,
         rotate_control=False,
