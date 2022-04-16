@@ -8,6 +8,8 @@ class User(db.Model, UserMixin):
     username = db.Column(db.String, nullable=False)
     password = db.Column(db.String(120), nullable=False)
     active = db.Column(db.Boolean, nullable=False)
+    latitude = db.Column(db.Float, nullable=True)
+    longitude = db.Column(db.Float, nullable=True)
     spottings = db.relationship(
         "Spotting", backref="user", lazy=True, cascade="all, delete-orphan"
     )
@@ -34,3 +36,7 @@ class User(db.Model, UserMixin):
 
     def get_num_spottings(self):
         return len(self.spottings)
+
+    def set_location(self, lat, long):
+        self.latitude = lat
+        self.longitude = long

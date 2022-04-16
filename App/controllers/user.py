@@ -21,3 +21,12 @@ def get_all_users_json():
         return []
     users = [user.toDict() for user in users]
     return json.dumps(users)
+
+
+def set_user_location(uid, lat, long):
+    user = User.query.filter_by(id=uid).first()
+    if user is None:
+        return
+    user.set_location(lat, long)
+    db.session.add(user)
+    db.session.commit()

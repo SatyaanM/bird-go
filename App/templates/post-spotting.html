@@ -1,21 +1,25 @@
 {% extends "postlogin.html" %}
-{% block title %}Bird Go Map{% endblock %}
-{% block page %}Map{% endblock %}
+{% block title %}Bird Go Post{% endblock %}
+{% block page %}Post Spotting{% endblock %}
 
 {{ super() }}
 
+{% block javascript %}
+    <script>
+
+    </script>
+
+{% endblock %}
+
 {% block content %}
- {% if markers|length > 0 %}
     <div  id="map" style="width:100%">
         {{ googlemap(
-        "all-spottings-map",
-        markers[0].lat,
-        markers[0].lng,
-        markers=markers,
+        "post-spotting-map",
+        lat=1,
+        lng=1,
         center_on_user_location=True,
         streetview_control=False,
         rotate_control=False,
         scale_control=False) }}
     </div>
- {% endif %}
 {% endblock %}

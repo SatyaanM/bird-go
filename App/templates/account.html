@@ -15,14 +15,25 @@
         <div>
             <ul class="collection with-header">
                 <li class="collection-header">
-                    Spottings
+                    Spottings at (latitude, longitude). Details : and Time :
                 </li>
                 {% if spottings|length > 0 %}
                     {% for spotting in spottings %}
                         <li class="collection-item">
-                            {{ spotting.bird_name }} at ({{ spotting.lat }}, {{ spotting.long }}).  Details: {{ spotting.details }}
+                            {{ spotting.bird_name }} at ({{ spotting.lat }}, {{ spotting.long }}).  Details: {{ spotting.details }} Time: {{ spotting.time }}
                         </li>
                     {% endfor %}
+                    <div class="map">
+                                {{ googlemap(
+                                            "my-spottings-map",
+                                            markers[0].lat,
+                                            markers[0].lng,
+                                            markers=markers,
+                                            center_on_user_location=True,
+                                            streetview_control=False,
+                                            rotate_control=False,
+                                            scale_control=False) }}
+                    </div>
                 {% else %}
                     <li class="collection-item">
                         No Spottings

@@ -82,19 +82,28 @@ def logout_action():
 @login_required
 def account():
     spottings = get_spottings_by_user(session['user_id'])
-    return render_template("account.html", spottings=spottings)
+    markers = [{
+        'lat': spotting['lat'],
+        'lng': spotting['long'],
+        'infobox': f"{spotting['bird_name']} spotted at {spotting['time']}. Details: {spotting['details']}"
+    } for spotting in spottings]
+
+    return render_template("account.html", spottings=spottings, markers=markers)
 
 
 @user_views.route('/map', methods=['GET'])
+@login_required
 def map_page():
     spottings = get_all_spottings_json()
-    coords = [[spotting['lat'], spotting['long']] for spotting in spottings]
-    # my_map = Map(
-    #     identifier="view-side",
-    #     lat=37.4419,
-    #     lng=-122.1419,
-    #     markers=[(37.4419, -122.1419)]
-    # )
-    return render_template('map.html', coords=coords)
+    markers = [{
+        'lat': spotting['lat'],
+        'lng': spotting['long'],
+        'infobox': f"{spotting['bird_name']} spotted at {spotting['time']}. Details: {spotting['details']}"
+    } for spotting in spottings]
+    return render_template('map.html', markers=markers)
 
 
+@user_views.route('/post-spotting', methods=['GET'])
+@login_required
+def post_spotting_page():
+    return render_template('post-spotting.html')
