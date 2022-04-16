@@ -15,13 +15,14 @@ from App.controllers import (
     authenticate,
     login_user,
     logout_user,
-    get_spottings_by_user
+    get_spottings_by_user,
+    get_all_spottings_json,
 )
 
 from flask_login import login_required
 
-from flask_googlemaps import GoogleMaps
-from flask_googlemaps import Map
+# from flask_googlemaps import GoogleMaps
+# from flask_googlemaps import Map
 
 user_views = Blueprint("user_views", __name__, template_folder="../templates")
 
@@ -83,22 +84,17 @@ def account():
     spottings = get_spottings_by_user(session['user_id'])
     return render_template("account.html", spottings=spottings)
 
+
 @user_views.route('/map', methods=['GET'])
 def map_page():
-    #locations = []
-    #myMap = Map(
-    #    lat=locations[0].latitude,
-    #    lng=locations[0].longitude,
-    #    markers=[(loc.latitude, loc.longitude) for loc in locations],
-    #    fit_markers_to_bounds = True
-    #)
-    
-    myMap = Map(
-        identifier="mappy",
-        lat=37.4419,
-        lng=-122.1419,
-        markers=[(37.4419, -122.1419)]
-    )
-    return render_template('map.html', myMap=myMap)
+    spottings = get_all_spottings_json()
+    coords = [[spotting['lat'], spotting['long']] for spotting in spottings]
+    # my_map = Map(
+    #     identifier="view-side",
+    #     lat=37.4419,
+    #     lng=-122.1419,
+    #     markers=[(37.4419, -122.1419)]
+    # )
+    return render_template('map.html', coords=coords)
 
 

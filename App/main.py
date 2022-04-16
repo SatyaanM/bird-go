@@ -54,12 +54,12 @@ def create_app(config={}):
     init_db(app)
     setup_jwt(app)
     app.app_context().push()
-    GoogleMaps(app, key="AIzaSyD9LUWu6xWQHMDQrtB68oRYwtaq6gSQi8I")
     return app
 
 
 app = create_app()
 login_manager = LoginManager(app)
+GoogleMaps(app, key="AIzaSyD9LUWu6xWQHMDQrtB68oRYwtaq6gSQi8I")
 
 
 @login_manager.user_loader
