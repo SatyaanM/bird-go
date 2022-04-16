@@ -7,13 +7,28 @@
 {% block content %}
     <div class="row blue-grey darken-4 box" style="padding: 10px; margin: 10px">
         <div class="row">
-            <h1 style="color:white">{{username}} account info:</h1>
+            <h1 style="color:white">{{ session['username'] }} account info:</h1>
         </div>
         <div class="row">
-            <p style="color:white">Total spottings: {{number_spottings}}</p>
+            <p style="color:white">Total spottings: {{ spottings|length }}</p>
         </div>
-        <div class="row">
-            <p style="color:white">Next info item: </p>
+        <div>
+            <ul class="collection with-header">
+                <li class="collection-header">
+                    Spottings
+                </li>
+                {% if spottings|length > 0 %}
+                    {% for spotting in spottings %}
+                        <li class="collection-item">
+                            {{ spotting.bird_name }} at ({{ spotting.lat }}, {{ spotting.long }}).  Details: {{ spotting.details }}
+                        </li>
+                    {% endfor %}
+                {% else %}
+                    <li class="collection-item">
+                        No Spottings
+                    </li>
+                {% endif %}
+            </ul>
         </div>
         <div class="row">
             <a href="/logout" class="floating_button">Log out</a>
