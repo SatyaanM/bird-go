@@ -4,13 +4,6 @@
 
 {{ super() }}
 
-{% block javascript %}
-    <script>
-
-    </script>
-
-{% endblock %}
-
 {% block content %}
     <div  id="map" style="width:100%">
         {{ googlemap(
@@ -22,5 +15,32 @@
         streetview_control=False,
         rotate_control=False,
         scale_control=False) }}
+    </div>
+    <div class="row">
+        <div class="col s6 offset-s3 blue-grey darken-4 box">
+            <div class="row">
+                <form class="col s12 m8 offset-m2" method="POST" action="/post-spotting">
+                    {{ form.csrf_token }}
+
+                    <div class="input-field col s12 m8 offset-m2">
+                      {{ form.bird_name(size=100, class="validate") }}
+                      {{ form.bird_name.label }}
+                    </div>
+
+                    <div class="input-field col s12 m8 offset-m2">
+                      {{ form.details(size=500, class="validate") }}
+                      {{ form.details.label }}
+                    </div>
+
+                    <div class="input-field col s12 m8 offset-m2">
+                      {{ form.submit }}
+                    </div>
+                </form>
+            </div>
+            <div class="row" style="text-align: center;">
+                <p style="margin:0px;">Don't have an account?</p>
+                <a style="margin:0px;" href="/signup">Click here</a>
+            </div>
+        </div>
     </div>
 {% endblock %}

@@ -22,3 +22,9 @@ class LogIn(FlaskForm):
     username = StringField("username", validators=[InputRequired()])
     password = PasswordField("password", validators=[InputRequired()])
     submit = SubmitField("Login", render_kw={"class": "btn white-text"})
+
+
+class PostSpotting(FlaskForm):
+    bird_name = StringField("bird_name", validators=[InputRequired()])
+    details = StringField("details", validators=[InputRequired()])
+    submit = SubmitField("Post", render_kw={"class": "btn white-text"})
