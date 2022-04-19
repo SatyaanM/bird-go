@@ -1,8 +1,9 @@
-import os, tempfile, pytest, logging
-from App.main import create_app
-from App.database import init_db
+import logging
+import os
+import pytest
 
-from App.controllers import get_all_users_json, create_user
+from App.database import init_db
+from App.main import create_app
 
 # https://stackoverflow.com/questions/4673373/logging-within-pytest-testshttps://stackoverflow.com/questions/4673373/logging-within-pytest-tests
 

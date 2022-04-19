@@ -7,23 +7,21 @@ from flask import (
     url_for,
     session
 )
+from flask_login import login_required
 
 from App.controllers import (
     SignUp,
     LogIn,
+    PostSpotting,
     create_user,
     authenticate,
     login_user,
     logout_user,
     get_spottings_by_user,
     get_all_spottings_json,
+    create_spotting,
     get_user_location,
 )
-
-from flask_login import login_required
-
-# from flask_googlemaps import GoogleMaps
-# from flask_googlemaps import Map
 
 user_views = Blueprint("user_views", __name__, template_folder="../templates")
 
@@ -55,7 +53,7 @@ def index():
     return render_template("login.html", form=form)
 
 
-# if request to /login is a POST, then get form info, validate, login and redirects to user_views.account
+# if request to /login is a POST, then get form info, validate, login and redirects to user_views.account_page
 @user_views.route("/login", methods=["POST"])
 def login_action():
     form = LogIn()
@@ -67,7 +65,7 @@ def login_action():
             login_user(user, False)
             session['username'] = user.username
             session['user_id'] = user.id
-            return redirect(url_for("user_views.account"))
+            return redirect(url_for("user_views.account_page"))
         flash("Invalid Credentials")
         return redirect(url_for("user_views.index"))
 
@@ -81,7 +79,7 @@ def logout_action():
 # user must be logged in to view account
 @user_views.route("/account", methods=["GET"])
 @login_required
-def account():
+def account_page():
     user_coords = get_user_location(session['user_id'])
     spottings = get_spottings_by_user(session['user_id'])
     markers = [{
@@ -109,5 +107,23 @@ def map_page():
 @user_views.route('/post-spotting', methods=['GET'])
 @login_required
 def post_spotting_page():
+    form = PostSpotting()
     user_coords = get_user_location(session['user_id'])
-    return render_template('post-spotting.html', user_coords=user_coords)
+    return render_template('post-spotting.html', user_coords=user_coords, form=form)
+
+
+@user_views.route('/post-spotting', methods=['POST'])
+@login_required
+def post_spotting_action():
+    form = PostSpotting()
+    location = get_user_location(session['user_id'])
+    if form.validate_on_submit():
+        data = request.form
+        spotting = create_spotting(
+            session['user_id'],
+            data['bird_name'],
+            location[0],
+            location[1],
+            data['details']
+        )
+        return redirect(url_for('user_views.account_page'))

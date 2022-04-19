@@ -1,5 +1,6 @@
-from App.database import db
 from datetime import datetime
+
+from App.database import db
 
 
 class Spotting(db.Model):

@@ -1,17 +1,14 @@
 import os
+from datetime import timedelta
+
 from flask import Flask
+from flask_cors import CORS
+from flask_googlemaps import GoogleMaps
 from flask_login import LoginManager
 from flask_uploads import DOCUMENTS, IMAGES, TEXT, UploadSet, configure_uploads
-from flask_cors import CORS
-from werkzeug.utils import secure_filename
-from werkzeug.datastructures import FileStorage
-from datetime import timedelta
-from flask_googlemaps import GoogleMaps
-
-from App.database import init_db, get_migrate
 
 from App.controllers import setup_jwt, load_user_from_id
-
+from App.database import init_db, get_migrate
 from App.views import user_views, api_views
 
 views = [user_views, api_views]

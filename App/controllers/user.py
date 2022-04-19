@@ -1,6 +1,7 @@
-from App.models import User
-from App.database import db
 import json
+
+from App.database import db
+from App.models import User
 
 
 # returns a list of all users

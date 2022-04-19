@@ -1,5 +1,6 @@
 import flask_login
-from flask_jwt import JWT, jwt_required
+from flask_jwt import JWT
+
 from App.models import User
 
 

@@ -1,6 +1,5 @@
-from App.models import Spotting
 from App.database import db
-import json
+from App.models import Spotting
 
 
 # creates a new Spotting object and stores it in database

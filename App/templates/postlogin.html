@@ -19,7 +19,7 @@
 
       function getLocation() {
         if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(setPosition);
+            navigator.geolocation.getCurrentPosition(setPosition, {enableHighAccuracy: true});
         } else {
             alert("Geoposition failed.");
         }

@@ -1,9 +1,5 @@
 import click
-from flask import Flask
-from flask.cli import with_appcontext
 
-from App.database import create_db
-from App.main import app, migrate
 from App.controllers import (
     create_user,
     get_all_users_json,
@@ -12,6 +8,8 @@ from App.controllers import (
     get_spottings_by_user,
     get_spottings_by_bird
 )
+from App.database import create_db
+from App.main import app
 
 
 @app.cli.command("init")
