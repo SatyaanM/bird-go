@@ -5,7 +5,7 @@
 {{ super() }}
 
 {% block content %}
-    <div class="row blue-grey darken-4 box" style="padding: 10px; margin: 10px">
+    <div class="row blue-grey darken-4 box" style="padding: 10px; margin: 10px; height:fit-content;">
         <div class="row">
             <h1 style="color:white">{{ session['username'] }} account info:</h1>
         </div>
@@ -32,11 +32,12 @@
                                             center_on_user_location=True,
                                             streetview_control=False,
                                             rotate_control=False,
+                                            style="height:400px;width:90%;margin-left:auto;margin-right:auto;padding:5px;padding-top:25px;",
                                             scale_control=False) }}
                     </div>
                 {% else %}
                     <li class="collection-item">
-                        No Spottings
+                        You currently have not posted any spottings.
                     </li>
                 {% endif %}
             </ul>

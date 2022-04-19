@@ -5,19 +5,8 @@
 {{ super() }}
 
 {% block content %}
-    <div  id="map" style="width:100%">
-        {{ googlemap(
-        "post-spotting-map",
-        lat=user_coords[0],
-        lng=user_coords[1],
-        markers = [(user_coords[0], user_coords[1])],
-        center_on_user_location=True,
-        streetview_control=False,
-        rotate_control=False,
-        scale_control=False) }}
-    </div>
     <div class="row">
-        <div class="col s6 offset-s3 blue-grey darken-4 box">
+        <div class="col s6 offset-s3 blue-grey darken-4 box" style="height: fit-content;margin-top:8px;">
             <div class="row">
                 <form class="col s12 m8 offset-m2" method="POST" action="/post-spotting">
                     {{ form.csrf_token }}
@@ -37,10 +26,21 @@
                     </div>
                 </form>
             </div>
-            <div class="row" style="text-align: center;">
-                <p style="margin:0px;">Don't have an account?</p>
-                <a style="margin:0px;" href="/signup">Click here</a>
+
+            <div><h3 style="padding-left:30px">Your Location:</h3></div>
+            <div  id="map" style="width:auto;padding-top:5px;">
+                {{ googlemap(
+                "post-spotting-map",
+                lat=user_coords[0],
+                lng=user_coords[1],
+                markers = [(user_coords[0], user_coords[1])],
+                center_on_user_location=True,
+                streetview_control=False,
+                rotate_control=False,
+                style="height:400px;width:90%;margin-left:auto;margin-right:auto;padding:5px;padding-top:25px;",
+                scale_control=False) }}
             </div>
+
         </div>
     </div>
 {% endblock %}
