@@ -92,7 +92,7 @@ _For development run the serve command (what you execute):_
 ```
 $ flask run
 ```
-
+in gitpod: flask run --host=0.0.0.0
 _For production using gunicorn (what heroku executes):_
 ```
 $ gunicorn App.main:app
