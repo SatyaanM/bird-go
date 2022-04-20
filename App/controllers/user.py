@@ -10,8 +10,8 @@ def get_all_users():
 
 
 # creates a new User object and stores it in the database
-def create_user(username, password):
-    newuser = User(username=username, password=password)
+def create_user(uname, password):
+    newuser = User(uname=uname, password=password)
     db.session.add(newuser)
     db.session.commit()
 

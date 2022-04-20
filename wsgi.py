@@ -19,13 +19,14 @@ def initialize():
 
 
 @app.cli.command("create-user")
-@click.argument("username")
+@click.argument("uname")
 @click.argument("password")
-def create_user_command(username, password):
-    create_user(username, password)
-    print(f'{username} created!')
+def create_user_command(uname, password):
+    create_user(uname, password)
+    print(f'{uname} created!')
 
 
+@app.cli.command("get-users")
 @app.cli.command("get-users")
 def get_users():
     print(get_all_users_json())

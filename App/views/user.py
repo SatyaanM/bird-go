@@ -43,7 +43,7 @@ def signup_action():
     form = SignUp()
     if form.validate_on_submit():
         data = request.form
-        create_user(username=data["username"], password=data["password"])
+        create_user(uname=data["uname"], password=data["password"])
         flash("Account Created!")
         return redirect(url_for("user_views.index"))
     data = request.form
@@ -64,11 +64,11 @@ def login_action():
     form = LogIn()
     if form.validate_on_submit():
         data = request.form
-        user = authenticate(username=data["username"], password=data["password"])
+        user = authenticate(uname=data["uname"], password=data["password"])
         if user is not None:
             flash("Logged in successfully")
             login_user(user, False)
-            session['username'] = user.username
+            session['uname'] = user.uname
             session['user_id'] = user.id
             return redirect(url_for("user_views.spottings_page"))
         flash("Invalid Credentials")

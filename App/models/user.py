@@ -6,7 +6,7 @@ from App.database import db
 
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(120), nullable=False)
+    uname = db.Column(db.String(120), nullable=False)
     password = db.Column(db.String(120), nullable=False)
     active = db.Column(db.Boolean, nullable=False)
     latitude = db.Column(db.Float, nullable=True)
@@ -15,15 +15,15 @@ class User(db.Model, UserMixin):
         "Spotting", backref="user", lazy=True, cascade="all, delete-orphan"
     )
 
-    def __init__(self, username, password):
-        self.username = username
+    def __init__(self, uname, password):
+        self.uname = uname
         self.set_password(password)
         self.active = True
 
     def toDict(self):
         return {
             "id": self.id,
-            "username": self.username,
+            "uname": self.uname,
             "num_spottings": self.get_num_spottings(),
             "latitude": self.latitude,
             "longitude": self.longitude,
