@@ -46,8 +46,8 @@ def signup_action():
         create_user(username=data["username"], password=data["password"])
         flash("Account Created!")
         return redirect(url_for("user_views.index"))
-    # flash("Error!")
-    # return redirect(url_for("user_views.signup_action"))
+    flash("Failed to create account. Please try again.")
+    return redirect(url_for("user_views.signup_action"))
 
 
 # if request to /login is a GET, return login.html
@@ -72,8 +72,8 @@ def login_action():
             return redirect(url_for("user_views.spottings_page"))
         flash("Invalid Credentials")
         return redirect(url_for("user_views.index"))
-    # flash("Error!")
-    # return redirect(url_for("user_views.index"))
+    flash("Invalid Credentials")
+    return redirect(url_for("user_views.index"))
 
 
 @user_views.route("/logout")
