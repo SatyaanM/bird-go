@@ -63,7 +63,7 @@ def index():
 def login_action():
     form = LogIn()
     if form.validate_on_submit():
-
+        data = request.form
         user = authenticate(uname=data["uname"], password=data["password"])
         if user is not None:
             flash("Logged in successfully")
