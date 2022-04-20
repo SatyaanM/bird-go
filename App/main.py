@@ -24,7 +24,7 @@ def loadConfig(app, config):
     if app.config["ENV"] == "DEVELOPMENT":
         app.config.from_object("App.config")
     else:
-        app.config["SQLALCHEMY_DATABASE_URL"] = os.environ.get(
+        app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get(
             "SQLALCHEMY_DATABASE_URL"
         )
         app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
