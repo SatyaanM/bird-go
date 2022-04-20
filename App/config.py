@@ -1,4 +1,4 @@
-SQLALCHEMY_DATABASE_URI = "postgres://xzakjyzxttsmaa:e4c8ac0cd7730cdae54285520a59f7e2bf88e095a4f92d748bef3fd0893bc670@ec2-44-194-4-127.compute-1.amazonaws.com:5432/dat38547pah59c"
+SQLALCHEMY_DATABASE_URI = "postgresql://xzakjyzxttsmaa:e4c8ac0cd7730cdae54285520a59f7e2bf88e095a4f92d748bef3fd0893bc670@ec2-44-194-4-127.compute-1.amazonaws.com:5432/dat38547pah59c"
 SECRET_KEY = "secret key"
 JWT_EXPIRATION_DELTA = 7
 ENV = "DEVELOPMENT"
