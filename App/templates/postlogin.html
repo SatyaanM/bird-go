@@ -19,7 +19,7 @@
 
       function getLocation() {
         if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(setPosition, {enableHighAccuracy: true});
+            navigator.geolocation.getCurrentPosition(setPosition);
         } else {
             alert("Geoposition failed.");
         }
@@ -39,6 +39,7 @@
           .catch(err => console.log("Request Failed", err));
       }
       window.onload = getLocation();
+
   </script>
     <nav class="blue-grey darken-4">
       <div class="nav-wrapper">

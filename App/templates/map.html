@@ -17,5 +17,16 @@
         rotate_control=False,
         scale_control=False) }}
     </div>
+ {% else %}
+    <div  id="map" style="width:100%">
+        {{ googlemap(
+        "all-spottings-map",
+        lat=user_coords[0],
+        lng=user_coords[1],
+        center_on_user_location=True,
+        streetview_control=False,
+        rotate_control=False,
+        scale_control=False) }}
+    </div>
  {% endif %}
 {% endblock %}
