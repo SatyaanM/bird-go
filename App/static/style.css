@@ -39,6 +39,7 @@
 @media (max-width: 800px) {
     #info_box{
         height:100px;
+        transform: scale(0.7);
     }
 }
 
@@ -46,8 +47,20 @@
     height:80vh;
 }
 
-div.login-form{
-    color: white;
+#password {
+    color: rgb(255, 255, 255);
+}
+
+#username {
+    color: rgb(255, 255, 255);
+}
+
+#confirm {
+    color: rgb(255, 255, 255);
+}
+
+#details {
+    color: rgb(255, 255, 255);
 }
 
 select.validate{
