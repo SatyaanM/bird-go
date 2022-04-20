@@ -4,7 +4,7 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from App.database import db
 
 
-class User(db.Model, UserMixin):
+class Users (db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     uname = db.Column(db.String(120), nullable=False)
     password = db.Column(db.String(120), nullable=False)
@@ -12,7 +12,7 @@ class User(db.Model, UserMixin):
     latitude = db.Column(db.Float, nullable=True)
     longitude = db.Column(db.Float, nullable=True)
     spottings = db.relationship(
-        "Spotting", backref="user", lazy=True, cascade="all, delete-orphan"
+        "Spotting", backref="users", lazy=True, cascade="all, delete-orphan"
     )
 
     def __init__(self, uname, password):

@@ -5,7 +5,7 @@ from App.database import db
 
 class Spotting(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
     bird_name = db.Column(db.String, nullable=False)
     lat = db.Column(db.Float, nullable=False)
     long = db.Column(db.Float, nullable=False)

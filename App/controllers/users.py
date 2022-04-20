@@ -1,23 +1,23 @@
 import json
 
 from App.database import db
-from App.models import User
+from App.models import Users
 
 
 # returns a list of all users
 def get_all_users():
-    return User.query.all()
+    return Users.query.all()
 
 
 # creates a new User object and stores it in the database
 def create_user(uname, password):
-    newuser = User(uname=uname, password=password)
+    newuser = Users(uname=uname, password=password)
     db.session.add(newuser)
     db.session.commit()
 
 
 def get_all_users_json():
-    users = User.query.all()
+    users = Users.query.all()
     if not users:
         return []
     users = [user.toDict() for user in users]
@@ -25,7 +25,7 @@ def get_all_users_json():
 
 
 def set_user_location(uid, lat, long):
-    user = User.query.filter_by(id=uid).first()
+    user = Users.query.filter_by(id=uid).first()
     if user is None:
         return
     user.set_location(lat, long)
@@ -34,7 +34,7 @@ def set_user_location(uid, lat, long):
 
 
 def get_user_location(uid):
-    user = User.query.filter_by(id=uid).first()
+    user = Users.query.filter_by(id=uid).first()
     if user is None:
         return
     return [user.latitude, user.longitude]

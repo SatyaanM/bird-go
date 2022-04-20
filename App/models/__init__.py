@@ -1,2 +1,2 @@
 from .spotting import *
-from .user import *
+from .users import *
