@@ -47,7 +47,7 @@ def signup_action():
         flash("Account Created!")
         return redirect(url_for("user_views.index"))
     data = request.form
-    flash(data)
+    # flash(data)
     return redirect(url_for("user_views.signup_action"))
 
 
@@ -74,7 +74,7 @@ def login_action():
         flash("Invalid Credentials")
         return redirect(url_for("user_views.index"))
     data = request.form
-    flash(data)
+    # flash(data)
     return redirect(url_for("user_views.index"))
 
 
