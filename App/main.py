@@ -24,9 +24,9 @@ def loadConfig(app, config):
     if app.config["ENV"] == "DEVELOPMENT":
         app.config.from_object("App.config")
     else:
-        uri = os.getenv("DATABASE_URL")  # or other relevant config var
-        if uri.startswith("postgres://"):
-            uri = uri.replace("postgres://", "postgresql://", 1)
+        # uri = os.getenv("DATABASE_URL")  # or other relevant config var
+        # if uri.startswith("postgres://"):
+        #     uri = uri.replace("postgres://", "postgresql://", 1)
         app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URI")
         app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
         app.config["JWT_EXPIRATION_DELTA"] = timedelta(
