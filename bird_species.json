@@ -1,0 +1,796 @@
+[
+  {
+     "SpcRecID":21,"Scientific name":"Crypturellus soui","English name":"Little Tinamou"  },
+  {
+     "SpcRecID":87,"Scientific name":"Pipile pipile","English name":"Trinidad Piping-guan"  },
+  {
+     "SpcRecID":63,"Scientific name":"Ortalis ruficauda","English name":"Rufous-vented Chachalaca"  },
+  {
+     "SpcRecID":343,"Scientific name":"Anhima cornuta","English name":"Horned Screamer"  },
+  {
+     "SpcRecID":352,"Scientific name":"Dendrocygna viduata","English name":"White-faced Whistling-duck"  },
+  {
+     "SpcRecID":354,"Scientific name":"Dendrocygna autumnalis","English name":"Black-bellied Whistling-duck"  },
+  {
+     "SpcRecID":349,"Scientific name":"Dendrocygna bicolor","English name":"Fulvous Whistling-duck"  },
+  {
+     "SpcRecID":356,"Scientific name":"Nomonyx dominicus","English name":"Masked Duck"  },
+  {
+     "SpcRecID":409,"Scientific name":"Cairina moschata","English name":"Muscovy Duck"  },
+  {
+     "SpcRecID":471,"Scientific name":"Netta erythrophthalma","English name":"Southern Pochard"  },
+  {
+     "SpcRecID":475,"Scientific name":"Aythya collaris","English name":"Ring-necked Duck"  },
+  {
+     "SpcRecID":483,"Scientific name":"Aythya affinis","English name":"Lesser Scaup"  },
+  {
+     "SpcRecID":448,"Scientific name":"Spatula clypeata","English name":"Northern Shoveler"  },
+  {
+     "SpcRecID":443,"Scientific name":"Spatula discors","English name":"Blue-winged Teal"  },
+  {
+     "SpcRecID":430,"Scientific name":"Mareca americana","English name":"American Wigeon"  },
+  {
+     "SpcRecID":454,"Scientific name":"Anas bahamensis","English name":"White-cheeked Pintail"  },
+  {
+     "SpcRecID":30242,"Scientific name":"Anas carolinensis","English name":"Green-winged Teal"  },
+  {
+     "SpcRecID":3632,"Scientific name":"Tachybaptus dominicus","English name":"Least Grebe"  },
+  {
+     "SpcRecID":3633,"Scientific name":"Podilymbus podiceps","English name":"Pied-billed Grebe"  },
+  {
+     "SpcRecID":31025,"Scientific name":"Phoenicopterus ruber","English name":"American Flamingo"  },
+  {
+     "SpcRecID":3648,"Scientific name":"Phaethon aethereus","English name":"Red-billed Tropicbird"  },
+  {
+     "SpcRecID":3650,"Scientific name":"Phaethon lepturus","English name":"White-tailed Tropicbird"  },
+  {
+     "SpcRecID":2476,"Scientific name":"Patagioenas speciosa","English name":"Scaled Pigeon"  },
+  {
+     "SpcRecID":1016546,"Scientific name":"Patagioenas albilinea","English name":"Southern Band-tailed Pigeon"  },
+  {
+     "SpcRecID":2484,"Scientific name":"Patagioenas cayennensis","English name":"Pale-vented Pigeon"  },
+  {
+     "SpcRecID":2602,"Scientific name":"Geotrygon montana","English name":"Ruddy Quail-dove"  },
+  {
+     "SpcRecID":2577,"Scientific name":"Leptotila verreauxi","English name":"White-tipped Dove"  },
+  {
+     "SpcRecID":2582,"Scientific name":"Leptotila rufaxilla","English name":"Grey-fronted Dove"  },
+  {
+     "SpcRecID":2597,"Scientific name":"Zentrygon linearis","English name":"Lined Quail-dove"  },
+  {
+     "SpcRecID":2556,"Scientific name":"Zenaida auriculata","English name":"Eared Dove"  },
+  {
+     "SpcRecID":2561,"Scientific name":"Columbina squammata","English name":"Scaled Dove"  },
+  {
+     "SpcRecID":2562,"Scientific name":"Columbina passerina","English name":"Common Ground-dove"  },
+  {
+     "SpcRecID":2563,"Scientific name":"Columbina minuta","English name":"Plain-breasted Ground-dove"  },
+  {
+     "SpcRecID":2564,"Scientific name":"Columbina talpacoti","English name":"Ruddy Ground-dove"  },
+  {
+     "SpcRecID":2569,"Scientific name":"Claravis pretiosa","English name":"Blue Ground-dove"  },
+  {
+     "SpcRecID":2347,"Scientific name":"Steatornis caripensis","English name":"Oilbird"  },
+  {
+     "SpcRecID":2351,"Scientific name":"Nyctibius griseus","English name":"Common Potoo"  },
+  {
+     "SpcRecID":2370,"Scientific name":"Chordeiles nacunda","English name":"Nacunda Nighthawk"  },
+  {
+     "SpcRecID":2366,"Scientific name":"Chordeiles acutipennis","English name":"Lesser Nighthawk"  },
+  {
+     "SpcRecID":2362,"Scientific name":"Lurocalis semitorquatus","English name":"Short-tailed Nighthawk"  },
+  {
+     "SpcRecID":2371,"Scientific name":"Nyctidromus albicollis","English name":"Pauraque"  },
+  {
+     "SpcRecID":2389,"Scientific name":"Hydropsalis cayennensis","English name":"White-tailed Nightjar"  },
+  {
+     "SpcRecID":2379,"Scientific name":"Antrostomus rufus","English name":"Rufous Nightjar"  },
+  {
+     "SpcRecID":1695,"Scientific name":"Cypseloides niger","English name":"Black Swift"  },
+  {
+     "SpcRecID":1693,"Scientific name":"Streptoprocne rutila","English name":"Chestnut-collared Swift"  },
+  {
+     "SpcRecID":1703,"Scientific name":"Streptoprocne zonaris","English name":"White-collared Swift"  },
+  {
+     "SpcRecID":1754,"Scientific name":"Chaetura spinicaudus","English name":"Band-rumped Swift"  },
+  {
+     "SpcRecID":1756,"Scientific name":"Chaetura cinereiventris","English name":"Grey-rumped Swift"  },
+  {
+     "SpcRecID":1760,"Scientific name":"Chaetura chapmani","English name":"Chapman's Swift"  },
+  {
+     "SpcRecID":1761,"Scientific name":"Chaetura brachyura","English name":"Short-tailed Swift"  },
+  {
+     "SpcRecID":1768,"Scientific name":"Tachornis squamata","English name":"Fork-tailed Palm-swift"  },
+  {
+     "SpcRecID":1770,"Scientific name":"Panyptila cayennensis","English name":"Lesser Swallow-tailed Swift"  },
+  {
+     "SpcRecID":1844,"Scientific name":"Florisuga mellivora","English name":"White-necked Jacobin"  },
+  {
+     "SpcRecID":1798,"Scientific name":"Glaucis hirsutus","English name":"Rufous-breasted Hermit"  },
+  {
+     "SpcRecID":32718,"Scientific name":"Phaethornis longuemareus","English name":"Little Hermit"  },
+  {
+     "SpcRecID":1803,"Scientific name":"Phaethornis guy","English name":"Green Hermit"  },
+  {
+     "SpcRecID":1846,"Scientific name":"Colibri delphinae","English name":"Brown Violet-ear"  },
+  {
+     "SpcRecID":1921,"Scientific name":"Polytmus guainumbi","English name":"White-tailed Goldenthroat"  },
+  {
+     "SpcRecID":1859,"Scientific name":"Chrysolampis mosquitus","English name":"Ruby-topaz Hummingbird"  },
+  {
+     "SpcRecID":1850,"Scientific name":"Anthracothorax viridigula","English name":"Green-throated Mango"  },
+  {
+     "SpcRecID":1852,"Scientific name":"Anthracothorax nigricollis","English name":"Black-throated Mango"  },
+  {
+     "SpcRecID":1864,"Scientific name":"Lophornis ornatus","English name":"Tufted Coquette"  },
+  {
+     "SpcRecID":1882,"Scientific name":"Chlorostilbon mellisugus","English name":"Blue-tailed Emerald"  },
+  {
+     "SpcRecID":1879,"Scientific name":"Chlorostilbon notatus","English name":"Blue-chinned Emerald"  },
+  {
+     "SpcRecID":1839,"Scientific name":"Campylopterus ensipennis","English name":"White-tailed Sabrewing"  },
+  {
+     "SpcRecID":1932,"Scientific name":"Amazilia brevirostris","English name":"White-chested Emerald"  },
+  {
+     "SpcRecID":1949,"Scientific name":"Amazilia tobaci","English name":"Copper-rumped Hummingbird"  },
+  {
+     "SpcRecID":2082,"Scientific name":"Heliomaster longirostris","English name":"Long-billed Starthroat"  },
+  {
+     "SpcRecID":2114,"Scientific name":"Chaetocercus jourdanii","English name":"Rufous-shafted Woodstar"  },
+  {
+     "SpcRecID":1320,"Scientific name":"Crotophaga major","English name":"Greater Ani"  },
+  {
+     "SpcRecID":1321,"Scientific name":"Crotophaga ani","English name":"Smooth-billed Ani"  },
+  {
+     "SpcRecID":1324,"Scientific name":"Tapera naevia","English name":"Striped Cuckoo"  },
+  {
+     "SpcRecID":1314,"Scientific name":"Coccycua minuta","English name":"Little Cuckoo"  },
+  {
+     "SpcRecID":1304,"Scientific name":"Coccyzus americanus","English name":"Yellow-billed Cuckoo"  },
+  {
+     "SpcRecID":1306,"Scientific name":"Coccyzus minor","English name":"Mangrove Cuckoo"  },
+  {
+     "SpcRecID":1308,"Scientific name":"Coccyzus melacoryphus","English name":"Dark-billed Cuckoo"  },
+  {
+     "SpcRecID":1303,"Scientific name":"Coccyzus erythropthalmus","English name":"Black-billed Cuckoo"  },
+  {
+     "SpcRecID":2802,"Scientific name":"Heliornis fulica","English name":"Sungrebe"  },
+  {
+     "SpcRecID":2840,"Scientific name":"Laterallus exilis","English name":"Grey-breasted Crake"  },
+  {
+     "SpcRecID":2914,"Scientific name":"Laterallus flaviventer","English name":"Yellow-breasted Crake"  },
+  {
+     "SpcRecID":1017065,"Scientific name":"Rallus longirostris","English name":"Mangrove Rail"  },
+  {
+     "SpcRecID":2883,"Scientific name":"Aramides axillaris","English name":"Rufous-necked Wood-rail"  },
+  {
+     "SpcRecID":2919,"Scientific name":"Neocrex erythrops","English name":"Paint-billed Crake"  },
+  {
+     "SpcRecID":2920,"Scientific name":"Pardirallus maculatus","English name":"Spotted Rail"  },
+  {
+     "SpcRecID":2907,"Scientific name":"Porzana albicollis","English name":"Ash-throated Crake"  },
+  {
+     "SpcRecID":2905,"Scientific name":"Porzana carolina","English name":"Sora"  },
+  {
+     "SpcRecID":2931,"Scientific name":"Porphyrio martinicus","English name":"Purple Gallinule"  },
+  {
+     "SpcRecID":2932,"Scientific name":"Porphyrio flavirostris","English name":"Azure Gallinule"  },
+  {
+     "SpcRecID":1017063,"Scientific name":"Gallinula galeata","English name":"Common Gallinule"  },
+  {
+     "SpcRecID":2799,"Scientific name":"Aramus guarauna","English name":"Limpkin"  },
+  {
+     "SpcRecID":3969,"Scientific name":"Oceanites oceanicus","English name":"Wilson's Storm-petrel"  },
+  {
+     "SpcRecID":1018415,"Scientific name":"Hydrobates leucorhous","English name":"Leach's Storm-petrel"  },
+  {
+     "SpcRecID":3936,"Scientific name":"Puffinus puffinus","English name":"Manx Shearwater"  },
+  {
+     "SpcRecID":1016943,"Scientific name":"Puffinus lherminieri","English name":"Audubon's Shearwater"  },
+  {
+     "SpcRecID":3824,"Scientific name":"Mycteria americana","English name":"Wood Stork"  },
+  {
+     "SpcRecID":3834,"Scientific name":"Ciconia maguari","English name":"Maguari Stork"  },
+  {
+     "SpcRecID":3807,"Scientific name":"Platalea ajaja","English name":"Roseate Spoonbill"  },
+  {
+     "SpcRecID":3775,"Scientific name":"Eudocimus ruber","English name":"Scarlet Ibis"  },
+  {
+     "SpcRecID":3777,"Scientific name":"Plegadis falcinellus","English name":"Glossy Ibis"  },
+  {
+     "SpcRecID":3751,"Scientific name":"Tigrisoma lineatum","English name":"Rufescent Tiger-heron"  },
+  {
+     "SpcRecID":3740,"Scientific name":"Agamia agami","English name":"Agami Heron"  },
+  {
+     "SpcRecID":3748,"Scientific name":"Cochlearius cochlearius","English name":"Boat-billed Heron"  },
+  {
+     "SpcRecID":3765,"Scientific name":"Botaurus pinnatus","English name":"Pinnated Bittern"  },
+  {
+     "SpcRecID":3755,"Scientific name":"Ixobrychus involucris","English name":"Stripe-backed Bittern"  },
+  {
+     "SpcRecID":3759,"Scientific name":"Ixobrychus exilis","English name":"Least Bittern"  },
+  {
+     "SpcRecID":3742,"Scientific name":"Nycticorax nycticorax","English name":"Black-crowned Night-heron"  },
+  {
+     "SpcRecID":3741,"Scientific name":"Nyctanassa violacea","English name":"Yellow-crowned Night-heron"  },
+  {
+     "SpcRecID":1016802,"Scientific name":"Butorides striata","English name":"Green-backed Heron"  },
+  {
+     "SpcRecID":3730,"Scientific name":"Bubulcus ibis","English name":"Cattle Egret"  },
+  {
+     "SpcRecID":3715,"Scientific name":"Ardea cinerea","English name":"Grey Heron"  },
+  {
+     "SpcRecID":1101858,"Scientific name":"Ardea herodias","English name":"Great Blue Heron"  },
+  {
+     "SpcRecID":3718,"Scientific name":"Ardea cocoi","English name":"Cocoi Heron"  },
+  {
+     "SpcRecID":3728,"Scientific name":"Ardea alba","English name":"Great White Egret"  },
+  {
+     "SpcRecID":3705,"Scientific name":"Egretta tricolor","English name":"Tricolored Heron"  },
+  {
+     "SpcRecID":3707,"Scientific name":"Egretta caerulea","English name":"Little Blue Heron"  },
+  {
+     "SpcRecID":3711,"Scientific name":"Egretta thula","English name":"Snowy Egret"  },
+  {
+     "SpcRecID":32208,"Scientific name":"Pelecanus occidentalis","English name":"Brown Pelican"  },
+  {
+     "SpcRecID":3843,"Scientific name":"Fregata magnificens","English name":"Magnificent Frigatebird"  },
+  {
+     "SpcRecID":3658,"Scientific name":"Sula sula","English name":"Red-footed Booby"  },
+  {
+     "SpcRecID":3659,"Scientific name":"Sula leucogaster","English name":"Brown Booby"  },
+  {
+     "SpcRecID":32652,"Scientific name":"Sula dactylatra","English name":"Masked Booby"  },
+  {
+     "SpcRecID":3674,"Scientific name":"Nannopterum brasilianus","English name":"Neotropical Cormorant"  },
+  {
+     "SpcRecID":3083,"Scientific name":"Burhinus bistriatus","English name":"Double-striped Thick-knee"  },
+  {
+     "SpcRecID":3093,"Scientific name":"Haematopus palliatus","English name":"American Oystercatcher"  },
+  {
+     "SpcRecID":1016812,"Scientific name":"Himantopus himantopus","English name":"Black-winged Stilt"  },
+  {
+     "SpcRecID":3114,"Scientific name":"Pluvialis squatarola","English name":"Grey Plover"  },
+  {
+     "SpcRecID":3113,"Scientific name":"Pluvialis dominica","English name":"American Golden Plover"  },
+  {
+     "SpcRecID":3117,"Scientific name":"Charadrius semipalmatus","English name":"Semipalmated Plover"  },
+  {
+     "SpcRecID":3120,"Scientific name":"Charadrius wilsonia","English name":"Wilson's Plover"  },
+  {
+     "SpcRecID":3121,"Scientific name":"Charadrius vociferus","English name":"Killdeer"  },
+  {
+     "SpcRecID":3134,"Scientific name":"Charadrius collaris","English name":"Collared Plover"  },
+  {
+     "SpcRecID":3175,"Scientific name":"Vanellus chilensis","English name":"Southern Lapwing"  },
+  {
+     "SpcRecID":3075,"Scientific name":"Jacana jacana","English name":"Wattled Jacana"  },
+  {
+     "SpcRecID":3015,"Scientific name":"Bartramia longicauda","English name":"Upland Sandpiper"  },
+  {
+     "SpcRecID":3009,"Scientific name":"Numenius phaeopus","English name":"Whimbrel"  },
+  {
+     "SpcRecID":3006,"Scientific name":"Limosa fedoa","English name":"Marbled Godwit"  },
+  {
+     "SpcRecID":3004,"Scientific name":"Limosa haemastica","English name":"Hudsonian Godwit"  },
+  {
+     "SpcRecID":3034,"Scientific name":"Arenaria interpres","English name":"Ruddy Turnstone"  },
+  {
+     "SpcRecID":3041,"Scientific name":"Calidris canutus","English name":"Red Knot"  },
+  {
+     "SpcRecID":3058,"Scientific name":"Calidris himantopus","English name":"Stilt Sandpiper"  },
+  {
+     "SpcRecID":3042,"Scientific name":"Calidris alba","English name":"Sanderling"  },
+  {
+     "SpcRecID":3049,"Scientific name":"Calidris minutilla","English name":"Least Sandpiper"  },
+  {
+     "SpcRecID":3050,"Scientific name":"Calidris fuscicollis","English name":"White-rumped Sandpiper"  },
+  {
+     "SpcRecID":3059,"Scientific name":"Calidris subruficollis","English name":"Buff-breasted Sandpiper"  },
+  {
+     "SpcRecID":3052,"Scientific name":"Calidris melanotos","English name":"Pectoral Sandpiper"  },
+  {
+     "SpcRecID":3043,"Scientific name":"Calidris pusilla","English name":"Semipalmated Sandpiper"  },
+  {
+     "SpcRecID":3044,"Scientific name":"Calidris mauri","English name":"Western Sandpiper"  },
+  {
+     "SpcRecID":3036,"Scientific name":"Limnodromus griseus","English name":"Short-billed Dowitcher"  },
+  {
+     "SpcRecID":31052,"Scientific name":"Gallinago delicata","English name":"Wilson's Snipe"  },
+  {
+     "SpcRecID":2993,"Scientific name":"Gallinago paraguaiae","English name":"South American Snipe"  },
+  {
+     "SpcRecID":3028,"Scientific name":"Actitis macularius","English name":"Spotted Sandpiper"  },
+  {
+     "SpcRecID":3023,"Scientific name":"Tringa solitaria","English name":"Solitary Sandpiper"  },
+  {
+     "SpcRecID":3031,"Scientific name":"Tringa semipalmata","English name":"Willet"  },
+  {
+     "SpcRecID":3022,"Scientific name":"Tringa flavipes","English name":"Lesser Yellowlegs"  },
+  {
+     "SpcRecID":3021,"Scientific name":"Tringa melanoleuca","English name":"Greater Yellowlegs"  },
+  {
+     "SpcRecID":3294,"Scientific name":"Anous stolidus","English name":"Brown Noddy"  },
+  {
+     "SpcRecID":3298,"Scientific name":"Gygis alba","English name":"Common White Tern"  },
+  {
+     "SpcRecID":3203,"Scientific name":"Rynchops niger","English name":"Black Skimmer"  },
+  {
+     "SpcRecID":3240,"Scientific name":"Larus ridibundus","English name":"Black-headed Gull"  },
+  {
+     "SpcRecID":3248,"Scientific name":"Larus atricilla","English name":"Laughing Gull"  },
+  {
+     "SpcRecID":3218,"Scientific name":"Larus delawarensis","English name":"Ring-billed Gull"  },
+  {
+     "SpcRecID":3231,"Scientific name":"Larus fuscus","English name":"Lesser Black-backed Gull"  },
+  {
+     "SpcRecID":1017057,"Scientific name":"Larus smithsonianus","English name":"Arctic Herring Gull"  },
+  {
+     "SpcRecID":3288,"Scientific name":"Onychoprion fuscatus","English name":"Sooty Tern"  },
+  {
+     "SpcRecID":3287,"Scientific name":"Onychoprion anaethetus","English name":"Bridled Tern"  },
+  {
+     "SpcRecID":3278,"Scientific name":"Sternula antillarum","English name":"Least Tern"  },
+  {
+     "SpcRecID":3279,"Scientific name":"Sternula superciliaris","English name":"Yellow-billed Tern"  },
+  {
+     "SpcRecID":3293,"Scientific name":"Phaetusa simplex","English name":"Large-billed Tern"  },
+  {
+     "SpcRecID":1016873,"Scientific name":"Gelochelidon nilotica","English name":"Common Gull-billed Tern"  },
+  {
+     "SpcRecID":3258,"Scientific name":"Hydroprogne caspia","English name":"Caspian Tern"  },
+  {
+     "SpcRecID":3292,"Scientific name":"Chlidonias niger","English name":"Black Tern"  },
+  {
+     "SpcRecID":3270,"Scientific name":"Sterna hirundo","English name":"Common Tern"  },
+  {
+     "SpcRecID":3265,"Scientific name":"Thalasseus sandvicensis","English name":"Sandwich Tern"  },
+  {
+     "SpcRecID":3260,"Scientific name":"Thalasseus maximus","English name":"Royal Tern"  },
+  {
+     "SpcRecID":3201,"Scientific name":"Stercorarius parasiticus","English name":"Arctic Jaeger"  },
+  {
+     "SpcRecID":3200,"Scientific name":"Stercorarius pomarinus","English name":"Pomarine Jaeger"  },
+  {
+     "SpcRecID":3199,"Scientific name":"Catharacta maccormicki","English name":"South Polar Skua"  },
+  {
+     "SpcRecID":2155,"Scientific name":"Tyto alba","English name":"Common Barn-owl"  },
+  {
+     "SpcRecID":1017034,"Scientific name":"Glaucidium brasilianum","English name":"Ferruginous Pygmy-owl"  },
+  {
+     "SpcRecID":2290,"Scientific name":"Athene cunicularia","English name":"Burrowing Owl"  },
+  {
+     "SpcRecID":2321,"Scientific name":"Asio clamator","English name":"Striped Owl"  },
+  {
+     "SpcRecID":2195,"Scientific name":"Megascops choliba","English name":"Tropical Screech-owl"  },
+  {
+     "SpcRecID":2257,"Scientific name":"Pulsatrix perspicillata","English name":"Spectacled Owl"  },
+  {
+     "SpcRecID":2250,"Scientific name":"Ciccaba virgata","English name":"Mottled Owl"  },
+  {
+     "SpcRecID":3818,"Scientific name":"Cathartes aura","English name":"Turkey Vulture"  },
+  {
+     "SpcRecID":3817,"Scientific name":"Coragyps atratus","English name":"American Black Vulture"  },
+  {
+     "SpcRecID":3823,"Scientific name":"Sarcoramphus papa","English name":"King Vulture"  },
+  {
+     "SpcRecID":3324,"Scientific name":"Pandion haliaetus","English name":"Osprey"  },
+  {
+     "SpcRecID":3344,"Scientific name":"Elanus leucurus","English name":"White-tailed Kite"  },
+  {
+     "SpcRecID":3341,"Scientific name":"Gampsonyx swainsonii","English name":"Pearl Kite"  },
+  {
+     "SpcRecID":3330,"Scientific name":"Leptodon cayanensis","English name":"Grey-headed Kite"  },
+  {
+     "SpcRecID":3331,"Scientific name":"Chondrohierax uncinatus","English name":"Hook-billed Kite"  },
+  {
+     "SpcRecID":3339,"Scientific name":"Elanoides forficatus","English name":"Swallow-tailed Kite"  },
+  {
+     "SpcRecID":3558,"Scientific name":"Spizaetus tyrannus","English name":"Black Hawk-eagle"  },
+  {
+     "SpcRecID":3559,"Scientific name":"Spizaetus ornatus","English name":"Ornate Hawk-eagle"  },
+  {
+     "SpcRecID":3349,"Scientific name":"Harpagus bidentatus","English name":"Double-toothed Kite"  },
+  {
+     "SpcRecID":3404,"Scientific name":"Circus buffoni","English name":"Long-winged Harrier"  },
+  {
+     "SpcRecID":3493,"Scientific name":"Busarellus nigricollis","English name":"Black-collared Hawk"  },
+  {
+     "SpcRecID":3352,"Scientific name":"Ictinia plumbea","English name":"Plumbeous Kite"  },
+  {
+     "SpcRecID":3347,"Scientific name":"Rostrhamus sociabilis","English name":"Snail Kite"  },
+  {
+     "SpcRecID":32520,"Scientific name":"Buteogallus anthracinus","English name":"Common Black Hawk"  },
+  {
+     "SpcRecID":3487,"Scientific name":"Buteogallus aequinoctialis","English name":"Rufous Crab-hawk"  },
+  {
+     "SpcRecID":3491,"Scientific name":"Buteogallus meridionalis","English name":"Savanna Hawk"  },
+  {
+     "SpcRecID":3490,"Scientific name":"Buteogallus urubitinga","English name":"Great Black Hawk"  },
+  {
+     "SpcRecID":3507,"Scientific name":"Geranoaetus albicaudatus","English name":"White-tailed Hawk"  },
+  {
+     "SpcRecID":3484,"Scientific name":"Pseudastur albicollis","English name":"White Hawk"  },
+  {
+     "SpcRecID":1016738,"Scientific name":"Buteo nitidus","English name":"Grey-lined Hawk"  },
+  {
+     "SpcRecID":3502,"Scientific name":"Buteo platypterus","English name":"Broad-winged Hawk"  },
+  {
+     "SpcRecID":3504,"Scientific name":"Buteo brachyurus","English name":"Short-tailed Hawk"  },
+  {
+     "SpcRecID":3511,"Scientific name":"Buteo albonotatus","English name":"Zone-tailed Hawk"  },
+  {
+     "SpcRecID":32666,"Scientific name":"Trogon viridis","English name":"Green-backed Trogon"  },
+  {
+     "SpcRecID":1017014,"Scientific name":"Trogon violaceus","English name":"Violaceous Trogon"  },
+  {
+     "SpcRecID":1017017,"Scientific name":"Trogon collaris","English name":"Collared Trogon"  },
+  {
+     "SpcRecID":1017005,"Scientific name":"Momotus bahamensis","English name":"Trinidad Motmot"  },
+  {
+     "SpcRecID":1154,"Scientific name":"Megaceryle torquata","English name":"Ringed Kingfisher"  },
+  {
+     "SpcRecID":1153,"Scientific name":"Megaceryle alcyon","English name":"Belted Kingfisher"  },
+  {
+     "SpcRecID":1156,"Scientific name":"Chloroceryle amazona","English name":"Amazon Kingfisher"  },
+  {
+     "SpcRecID":1159,"Scientific name":"Chloroceryle aenea","English name":"American Pygmy-kingfisher"  },
+  {
+     "SpcRecID":1157,"Scientific name":"Chloroceryle americana","English name":"Green Kingfisher"  },
+  {
+     "SpcRecID":886,"Scientific name":"Galbula ruficauda","English name":"Rufous-tailed Jacamar"  },
+  {
+     "SpcRecID":1016636,"Scientific name":"Ramphastos vitellinus","English name":"Channel-billed Toucan"  },
+  {
+     "SpcRecID":714,"Scientific name":"Campephilus melanoleucos","English name":"Crimson-crested Woodpecker"  },
+  {
+     "SpcRecID":1016991,"Scientific name":"Colaptes rubiginosus","English name":"Golden-olive Woodpecker"  },
+  {
+     "SpcRecID":696,"Scientific name":"Celeus elegans","English name":"Chestnut Woodpecker"  },
+  {
+     "SpcRecID":1016617,"Scientific name":"Hylatomus lineatus","English name":"Lineated Woodpecker"  },
+  {
+     "SpcRecID":586,"Scientific name":"Melanerpes rubricapillus","English name":"Red-crowned Woodpecker"  },
+  {
+     "SpcRecID":667,"Scientific name":"Veniliornis kirkii","English name":"Red-rumped Woodpecker"  },
+  {
+     "SpcRecID":3570,"Scientific name":"Caracara cheriway","English name":"Crested Caracara"  },
+  {
+     "SpcRecID":3571,"Scientific name":"Milvago chimachima","English name":"Yellow-headed Caracara"  },
+  {
+     "SpcRecID":3596,"Scientific name":"Falco sparverius","English name":"American Kestrel"  },
+  {
+     "SpcRecID":3608,"Scientific name":"Falco columbarius","English name":"Merlin"  },
+  {
+     "SpcRecID":3609,"Scientific name":"Falco rufigularis","English name":"Bat Falcon"  },
+  {
+     "SpcRecID":3624,"Scientific name":"Falco deiroleucus","English name":"Orange-breasted Falcon"  },
+  {
+     "SpcRecID":3607,"Scientific name":"Falco femoralis","English name":"Aplomado Falcon"  },
+  {
+     "SpcRecID":1016472,"Scientific name":"Falco peregrinus","English name":"Peregrine Falcon"  },
+  {
+     "SpcRecID":1631,"Scientific name":"Touit batavicus","English name":"Lilac-tailed Parrotlet"  },
+  {
+     "SpcRecID":1016914,"Scientific name":"Pionus menstruus","English name":"Blue-headed Parrot"  },
+  {
+     "SpcRecID":1681,"Scientific name":"Amazona ochrocephala","English name":"Yellow-crowned Amazon"  },
+  {
+     "SpcRecID":1682,"Scientific name":"Amazona amazonica","English name":"Orange-winged Amazon"  },
+  {
+     "SpcRecID":1615,"Scientific name":"Forpus passerinus","English name":"Green-rumped Parrotlet"  },
+  {
+     "SpcRecID":1555,"Scientific name":"Orthopsittaca manilatus","English name":"Red-bellied Macaw"  },
+  {
+     "SpcRecID":1547,"Scientific name":"Ara ararauna","English name":"Blue-and-yellow Macaw"  },
+  {
+     "SpcRecID":1551,"Scientific name":"Ara macao","English name":"Scarlet Macaw"  },
+  {
+     "SpcRecID":1017266,"Scientific name":"Formicivora intermedia","English name":"Northern White-fringed Antwren"  },
+  {
+     "SpcRecID":1017271,"Scientific name":"Myrmotherula axillaris","English name":"White-flanked Antwren"  },
+  {
+     "SpcRecID":4629,"Scientific name":"Dysithamnus mentalis","English name":"Plain Antvireo"  },
+  {
+     "SpcRecID":4593,"Scientific name":"Taraba major","English name":"Great Antshrike"  },
+  {
+     "SpcRecID":1017277,"Scientific name":"Sakesphorus canadensis","English name":"Black-crested Antshrike"  },
+  {
+     "SpcRecID":4601,"Scientific name":"Thamnophilus doliatus","English name":"Barred Antshrike"  },
+  {
+     "SpcRecID":4729,"Scientific name":"Sclateria naevia","English name":"Silvered Antbird"  },
+  {
+     "SpcRecID":4736,"Scientific name":"Myrmeciza longipes","English name":"White-bellied Antbird"  },
+  {
+     "SpcRecID":5074,"Scientific name":"Grallaria guatimalensis","English name":"Scaled Antpitta"  },
+  {
+     "SpcRecID":1017311,"Scientific name":"Formicarius analis","English name":"Black-faced Antthrush"  },
+  {
+     "SpcRecID":4998,"Scientific name":"Sclerurus albigularis","English name":"Grey-throated Leaftosser"  },
+  {
+     "SpcRecID":1017319,"Scientific name":"Sittasomus griseus","English name":"Western Olivaceous Woodcreeper"  },
+  {
+     "SpcRecID":5010,"Scientific name":"Dendrocincla fuliginosa","English name":"Plain-brown Woodcreeper"  },
+  {
+     "SpcRecID":30148,"Scientific name":"Xiphorhynchus susurrans","English name":"Cocoa Woodcreeper"  },
+  {
+     "SpcRecID":5032,"Scientific name":"Dendroplex picus","English name":"Straight-billed Woodcreeper"  },
+  {
+     "SpcRecID":5046,"Scientific name":"Lepidocolaptes souleyetii","English name":"Streak-headed Woodcreeper"  },
+  {
+     "SpcRecID":5006,"Scientific name":"Xenops rutilus","English name":"Streaked Xenops"  },
+  {
+     "SpcRecID":4890,"Scientific name":"Certhiaxis cinnamomeus","English name":"Yellow-chinned Spinetail"  },
+  {
+     "SpcRecID":4866,"Scientific name":"Synallaxis cinnamomea","English name":"Stripe-breasted Spinetail"  },
+  {
+     "SpcRecID":4842,"Scientific name":"Synallaxis albescens","English name":"Pale-breasted Spinetail"  },
+  {
+     "SpcRecID":4563,"Scientific name":"Manacus manacus","English name":"White-bearded Manakin"  },
+  {
+     "SpcRecID":4536,"Scientific name":"Ceratopipra erythrocephala","English name":"Golden-headed Manakin"  },
+  {
+     "SpcRecID":4552,"Scientific name":"Chiroxiphia pareola","English name":"Blue-backed Manakin"  },
+  {
+     "SpcRecID":4526,"Scientific name":"Procnias albus","English name":"White Bellbird"  },
+  {
+     "SpcRecID":4527,"Scientific name":"Procnias averano","English name":"Bearded Bellbird"  },
+  {
+     "SpcRecID":1017381,"Scientific name":"Tityra cayana","English name":"Western Black-tailed Tityra"  },
+  {
+     "SpcRecID":4448,"Scientific name":"Pachyramphus polychopterus","English name":"White-winged Becard"  },
+  {
+     "SpcRecID":1017394,"Scientific name":"Platyrinchus mystaceus","English name":"Eastern White-throated Spadebill"  },
+  {
+     "SpcRecID":1017397,"Scientific name":"Mionectes galbinus","English name":"Olive-striped Flycatcher"  },
+  {
+     "SpcRecID":4046,"Scientific name":"Mionectes oleagineus","English name":"Ochre-bellied Flycatcher"  },
+  {
+     "SpcRecID":1017400,"Scientific name":"Leptopogon superciliaris","English name":"Slaty-capped Flycatcher"  },
+  {
+     "SpcRecID":4224,"Scientific name":"Tolmomyias sulphurescens","English name":"Yellow-olive Flatbill"  },
+  {
+     "SpcRecID":1017405,"Scientific name":"Tolmomyias flaviventris","English name":"Ochre-lored Flatbill"  },
+  {
+     "SpcRecID":4212,"Scientific name":"Myiornis ecaudatus","English name":"Short-tailed Pygmy-tyrant"  },
+  {
+     "SpcRecID":4086,"Scientific name":"Todirostrum maculatum","English name":"Spotted Tody-flycatcher"  },
+  {
+     "SpcRecID":4120,"Scientific name":"Camptostoma obsoletum","English name":"Southern Beardless Tyrannulet"  },
+  {
+     "SpcRecID":4138,"Scientific name":"Elaenia flavogaster","English name":"Yellow-bellied Elaenia"  },
+  {
+     "SpcRecID":4142,"Scientific name":"Elaenia parvirostris","English name":"Small-billed Elaenia"  },
+  {
+     "SpcRecID":1017417,"Scientific name":"Elaenia chiriquensis","English name":"Lesser Elaenia"  },
+  {
+     "SpcRecID":4130,"Scientific name":"Myiopagis gaimardii","English name":"Forest Elaenia"  },
+  {
+     "SpcRecID":1017426,"Scientific name":"Phaeomyias murina","English name":"Mouse-colored Tyrannulet"  },
+  {
+     "SpcRecID":4183,"Scientific name":"Pseudocolopteryx sclateri","English name":"Crested Doradito"  },
+  {
+     "SpcRecID":4371,"Scientific name":"Attila spadiceus","English name":"Bright-rumped Attila"  },
+  {
+     "SpcRecID":4436,"Scientific name":"Legatus leucophaius","English name":"Piratic Flycatcher"  },
+  {
+     "SpcRecID":4438,"Scientific name":"Pitangus sulphuratus","English name":"Great Kiskadee"  },
+  {
+     "SpcRecID":4421,"Scientific name":"Tyrannopsis sulphurea","English name":"Sulphury Flycatcher"  },
+  {
+     "SpcRecID":4422,"Scientific name":"Megarynchus pitangua","English name":"Boat-billed Flycatcher"  },
+  {
+     "SpcRecID":1017429,"Scientific name":"Myiodynastes maculatus","English name":"Northern Streaked Flycatcher"  },
+  {
+     "SpcRecID":4419,"Scientific name":"Empidonomus varius","English name":"Variegated Flycatcher"  },
+  {
+     "SpcRecID":4408,"Scientific name":"Tyrannus melancholicus","English name":"Tropical Kingbird"  },
+  {
+     "SpcRecID":4416,"Scientific name":"Tyrannus dominicensis","English name":"Grey Kingbird"  },
+  {
+     "SpcRecID":4414,"Scientific name":"Tyrannus savana","English name":"Fork-tailed Flycatcher"  },
+  {
+     "SpcRecID":4384,"Scientific name":"Myiarchus swainsoni","English name":"Swainson's Flycatcher"  },
+  {
+     "SpcRecID":4382,"Scientific name":"Myiarchus tuberculifer","English name":"Dusky-capped Flycatcher"  },
+  {
+     "SpcRecID":4385,"Scientific name":"Myiarchus venezuelensis","English name":"Venezuelan Flycatcher"  },
+  {
+     "SpcRecID":4394,"Scientific name":"Myiarchus tyrannulus","English name":"Brown-crested Flycatcher"  },
+  {
+     "SpcRecID":1017434,"Scientific name":"Myiophobus fasciatus","English name":"Bran-colored Flycatcher"  },
+  {
+     "SpcRecID":4124,"Scientific name":"Sublegatus arenarum","English name":"Northern Scrub-flycatcher"  },
+  {
+     "SpcRecID":4354,"Scientific name":"Fluvicola pica","English name":"Pied Water-tyrant"  },
+  {
+     "SpcRecID":4357,"Scientific name":"Arundinicola leucocephala","English name":"White-headed Marsh-tyrant"  },
+  {
+     "SpcRecID":4255,"Scientific name":"Cnemotriccus fuscatus","English name":"Fuscous Flycatcher"  },
+  {
+     "SpcRecID":4256,"Scientific name":"Lathrotriccus euleri","English name":"Euler's Flycatcher"  },
+  {
+     "SpcRecID":4264,"Scientific name":"Contopus cooperi","English name":"Olive-sided Flycatcher"  },
+  {
+     "SpcRecID":1017454,"Scientific name":"Contopus bogotensis","English name":"Northern Tropical Pewee"  },
+  {
+     "SpcRecID":5554,"Scientific name":"Cyclarhis gujanensis","English name":"Rufous-browed Peppershrike"  },
+  {
+     "SpcRecID":1017525,"Scientific name":"Hylophilus insularis","English name":"Tobago Greenlet"  },
+  {
+     "SpcRecID":5602,"Scientific name":"Pachysylvia aurantiifrons","English name":"Golden-fronted Greenlet"  },
+  {
+     "SpcRecID":1099029,"Scientific name":"Vireo olivaceus","English name":"Red-eyed Vireo"  },
+  {
+     "SpcRecID":5587,"Scientific name":"Vireo altiloquus","English name":"Black-whiskered Vireo"  },
+  {
+     "SpcRecID":5582,"Scientific name":"Vireo flavifrons","English name":"Yellow-throated Vireo"  },
+  {
+     "SpcRecID":7143,"Scientific name":"Petrochelidon pyrrhonota","English name":"Cliff Swallow"  },
+  {
+     "SpcRecID":7116,"Scientific name":"Hirundo rustica","English name":"Barn Swallow"  },
+  {
+     "SpcRecID":1018013,"Scientific name":"Riparia riparia","English name":"Collared Sand Martin"  },
+  {
+     "SpcRecID":7080,"Scientific name":"Tachycineta albiventer","English name":"White-winged Swallow"  },
+  {
+     "SpcRecID":7089,"Scientific name":"Progne dominicensis","English name":"Caribbean Martin"  },
+  {
+     "SpcRecID":7091,"Scientific name":"Progne chalybea","English name":"Grey-breasted Martin"  },
+  {
+     "SpcRecID":7103,"Scientific name":"Stelgidopteryx ruficollis","English name":"Southern Rough-winged Swallow"  },
+  {
+     "SpcRecID":7094,"Scientific name":"Pygochelidon cyanoleuca","English name":"Blue-and-white Swallow"  },
+  {
+     "SpcRecID":6991,"Scientific name":"Ramphocaenus melanurus","English name":"Long-billed Gnatwren"  },
+  {
+     "SpcRecID":1018285,"Scientific name":"Troglodytes aedon","English name":"House Wren"  },
+  {
+     "SpcRecID":6951,"Scientific name":"Pheugopedius rutilus","English name":"Rufous-breasted Wren"  },
+  {
+     "SpcRecID":6851,"Scientific name":"Mimus gilvus","English name":"Tropical Mockingbird"  },
+  {
+     "SpcRecID":6370,"Scientific name":"Catharus fuscescens","English name":"Veery"  },
+  {
+     "SpcRecID":6371,"Scientific name":"Catharus minimus","English name":"Grey-cheeked Thrush"  },
+  {
+     "SpcRecID":6364,"Scientific name":"Catharus aurantiirostris","English name":"Orange-billed Nightingale-thrush"  },
+  {
+     "SpcRecID":6432,"Scientific name":"Turdus fumigatus","English name":"Cocoa Thrush"  },
+  {
+     "SpcRecID":6375,"Scientific name":"Turdus flavipes","English name":"Yellow-legged Thrush"  },
+  {
+     "SpcRecID":6440,"Scientific name":"Turdus albicollis","English name":"White-necked Thrush"  },
+  {
+     "SpcRecID":6435,"Scientific name":"Turdus nudigenis","English name":"Spectacled Thrush"  },
+  {
+     "SpcRecID":9352,"Scientific name":"Euphonia trinitatis","English name":"Trinidad Euphonia"  },
+  {
+     "SpcRecID":9356,"Scientific name":"Euphonia violacea","English name":"Violaceous Euphonia"  },
+  {
+     "SpcRecID":9362,"Scientific name":"Euphonia cyanocephala","English name":"Golden-rumped Euphonia"  },
+  {
+     "SpcRecID":8818,"Scientific name":"Spinus cucullatus","English name":"Red Siskin"  },
+  {
+     "SpcRecID":9753,"Scientific name":"Dolichonyx oryzivorus","English name":"Bobolink"  },
+  {
+     "SpcRecID":30206,"Scientific name":"Leistes militaris","English name":"Red-breasted Blackbird"  },
+  {
+     "SpcRecID":9658,"Scientific name":"Psarocolius decumanus","English name":"Crested Oropendola"  },
+  {
+     "SpcRecID":1017887,"Scientific name":"Cacicus cela","English name":"Yellow-rumped Cacique"  },
+  {
+     "SpcRecID":9682,"Scientific name":"Icterus nigrogularis","English name":"Yellow Oriole"  },
+  {
+     "SpcRecID":9693,"Scientific name":"Icterus galbula","English name":"Baltimore Oriole"  },
+  {
+     "SpcRecID":32482,"Scientific name":"Icterus icterus","English name":"Venezuelan Troupial"  },
+  {
+     "SpcRecID":9752,"Scientific name":"Molothrus oryzivorus","English name":"Giant Cowbird"  },
+  {
+     "SpcRecID":9749,"Scientific name":"Molothrus bonariensis","English name":"Shiny Cowbird"  },
+  {
+     "SpcRecID":9744,"Scientific name":"Quiscalus lugubris","English name":"Carib Grackle"  },
+  {
+     "SpcRecID":9712,"Scientific name":"Chrysomus icterocephalus","English name":"Yellow-hooded Blackbird"  },
+  {
+     "SpcRecID":9131,"Scientific name":"Parkesia noveboracensis","English name":"Northern Waterthrush"  },
+  {
+     "SpcRecID":9127,"Scientific name":"Protonotaria citrea","English name":"Prothonotary Warbler"  },
+  {
+     "SpcRecID":1017901,"Scientific name":"Geothlypis aequinoctialis","English name":"Masked Yellowthroat"  },
+  {
+     "SpcRecID":9126,"Scientific name":"Setophaga ruticilla","English name":"American Redstart"  },
+  {
+     "SpcRecID":9100,"Scientific name":"Setophaga tigrina","English name":"Cape May Warbler"  },
+  {
+     "SpcRecID":1017918,"Scientific name":"Setophaga pitiayumi","English name":"Tropical Parula"  },
+  {
+     "SpcRecID":9108,"Scientific name":"Setophaga fusca","English name":"Blackburnian Warbler"  },
+  {
+     "SpcRecID":9097,"Scientific name":"Setophaga petechia","English name":"American Yellow Warbler"  },
+  {
+     "SpcRecID":9119,"Scientific name":"Setophaga striata","English name":"Blackpoll Warbler"  },
+  {
+     "SpcRecID":1017912,"Scientific name":"Setophaga coronata","English name":"Myrtle Warbler"  },
+  {
+     "SpcRecID":1017936,"Scientific name":"Basileuterus auricapilla","English name":"Golden-crowned Warbler"  },
+  {
+     "SpcRecID":9620,"Scientific name":"Pheucticus ludovicianus","English name":"Rose-breasted Grosbeak"  },
+  {
+     "SpcRecID":9615,"Scientific name":"Spiza americana","English name":"Dickcissel"  },
+  {
+     "SpcRecID":9651,"Scientific name":"Passerina cyanea","English name":"Indigo Bunting"  },
+  {
+     "SpcRecID":9289,"Scientific name":"Habia rubica","English name":"Red-crowned Ant-tanager"  },
+  {
+     "SpcRecID":9298,"Scientific name":"Piranga olivacea","English name":"Scarlet Tanager"  },
+  {
+     "SpcRecID":9296,"Scientific name":"Piranga rubra","English name":"Summer Tanager"  },
+  {
+     "SpcRecID":1017970,"Scientific name":"Piranga hepatica","English name":"Hepatic Tanager"  },
+  {
+     "SpcRecID":9441,"Scientific name":"Chlorophanes spiza","English name":"Green Honeycreeper"  },
+  {
+     "SpcRecID":9447,"Scientific name":"Tersina viridis","English name":"Swallow Tanager"  },
+  {
+     "SpcRecID":9444,"Scientific name":"Cyanerpes caeruleus","English name":"Purple Honeycreeper"  },
+  {
+     "SpcRecID":9445,"Scientific name":"Cyanerpes cyaneus","English name":"Red-legged Honeycreeper"  },
+  {
+     "SpcRecID":9438,"Scientific name":"Dacnis cayana","English name":"Blue Dacnis"  },
+  {
+     "SpcRecID":1017988,"Scientific name":"Saltator olivascens","English name":"Caribbean Grey Saltator"  },
+  {
+     "SpcRecID":9199,"Scientific name":"Coereba flaveola","English name":"Bananaquit"  },
+  {
+     "SpcRecID":9575,"Scientific name":"Melanospiza bicolor","English name":"Black-faced Grassquit"  },
+  {
+     "SpcRecID":9576,"Scientific name":"Asemospiza fuliginosa","English name":"Sooty Grassquit"  },
+  {
+     "SpcRecID":9525,"Scientific name":"Volatinia jacarina","English name":"Blue-black Grassquit"  },
+  {
+     "SpcRecID":9283,"Scientific name":"Islerothraupis luctuosa","English name":"White-shouldered Tanager"  },
+  {
+     "SpcRecID":9286,"Scientific name":"Tachyphonus rufus","English name":"White-lined Tanager"  },
+  {
+     "SpcRecID":9308,"Scientific name":"Ramphocelus carbo","English name":"Silver-beaked Tanager"  },
+  {
+     "SpcRecID":9534,"Scientific name":"Sporophila bouvronides","English name":"Lesson's Seedeater"  },
+  {
+     "SpcRecID":9529,"Scientific name":"Sporophila intermedia","English name":"Grey Seedeater"  },
+  {
+     "SpcRecID":32200,"Scientific name":"Sporophila americana","English name":"Wing-barred Seedeater"  },
+  {
+     "SpcRecID":1018394,"Scientific name":"Sporophila nigricollis","English name":"Yellow-bellied Seedeater"  },
+  {
+     "SpcRecID":9562,"Scientific name":"Sporophila angolensis","English name":"Chestnut-bellied Seed-Finch"  },
+  {
+     "SpcRecID":9559,"Scientific name":"Sporophila crassirostris","English name":"Large-billed Seed-finch"  },
+  {
+     "SpcRecID":9528,"Scientific name":"Sporophila schistacea","English name":"Slate-colored Seedeater"  },
+  {
+     "SpcRecID":9547,"Scientific name":"Sporophila minuta","English name":"Ruddy-breasted Seedeater"  },
+  {
+     "SpcRecID":9202,"Scientific name":"Conirostrum bicolor","English name":"Bicolored Conebill"  },
+  {
+     "SpcRecID":9515,"Scientific name":"Sicalis flaveola","English name":"Saffron Finch"  },
+  {
+     "SpcRecID":9514,"Scientific name":"Sicalis columbiana","English name":"Orange-fronted Yellow-finch"  },
+  {
+     "SpcRecID":32504,"Scientific name":"Sicalis luteola","English name":"Grassland Yellow-finch"  },
+  {
+     "SpcRecID":9320,"Scientific name":"Sporathraupis cyanocephala","English name":"Blue-capped Tanager"  },
+  {
+     "SpcRecID":32687,"Scientific name":"Paroaria nigrogenis","English name":"Masked Cardinal"  },
+  {
+     "SpcRecID":9402,"Scientific name":"Tangara guttata","English name":"Speckled Tanager"  },
+  {
+     "SpcRecID":9313,"Scientific name":"Tangara episcopus","English name":"Blue-grey Tanager"  },
+  {
+     "SpcRecID":9319,"Scientific name":"Tangara palmarum","English name":"Palm Tanager"  },
+  {
+     "SpcRecID":9405,"Scientific name":"Tangara gyrola","English name":"Bay-headed Tanager"  },
+  {
+     "SpcRecID":1018166,"Scientific name":"Tangara mexicana","English name":"Turquoise Tanager"  }
+]
