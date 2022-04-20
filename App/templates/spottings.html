@@ -38,7 +38,7 @@
                 </tbody>
                 </table>
 
-                <div class="map" style="margin-top: 10px; border: 1px white solid; border-radius: 10px; padding:0px;">
+                <div class="map" style="margin-top: 10px">
                             {{ googlemap(
                                         "my-spottings-map",
                                         lat=user_coords[0],
@@ -47,7 +47,7 @@
                                         center_on_user_location=True,
                                         streetview_control=False,
                                         rotate_control=False,
-                                        style="height:400px;width:90%;margin-left:auto;margin-right:auto;padding:5px;padding-top:25px;",
+                                        style="height:400px;margin-left:auto;margin-right:auto;padding:5px;padding-top:25px;border-radius: 10px; border: 1px white solid;",
                                         scale_control=False) }}
 
                 </div>
