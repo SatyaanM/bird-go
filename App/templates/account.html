@@ -13,7 +13,7 @@
             <p style="color:white">Total spottings: {{ spottings|length }}</p>
         </div>
 
-        <div style="border: 1px white solid; padding: 5px;">
+        <div style="border: 1px white solid; padding: 5px; border-radius: 10px;">
             <table class="collection with-header" style="margin:0px;">
 
                 <tr class="collection-header">
@@ -34,6 +34,8 @@
                             <td>{{ spotting.time }}</td>
                         </tr>
                     {% endfor %}
+                    </table>
+
                     <div class="map">
                                 {{ googlemap(
                                             "my-spottings-map",
@@ -46,6 +48,7 @@
                                             style="height:400px;width:90%;margin-left:auto;margin-right:auto;padding:5px;padding-top:25px;",
                                             scale_control=False) }}
                     </div>
+
                 {% else %}
                 <tr class="collection-item">
                     <td>-</td>
@@ -55,7 +58,7 @@
                     <td>-</td>
                 </tr>
                 {% endif %}
-                </table>
+                
         </div>
     </div>
 {% endblock %}
