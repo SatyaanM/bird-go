@@ -63,7 +63,7 @@ def index():
 def login_action():
     form = LogIn()
     if form.validate_on_submit():
-        data = request.form
+
         user = authenticate(uname=data["uname"], password=data["password"])
         if user is not None:
             flash("Logged in successfully")
@@ -73,7 +73,8 @@ def login_action():
             return redirect(url_for("user_views.spottings_page"))
         flash("Invalid Credentials")
         return redirect(url_for("user_views.index"))
-    flash("Invalid Credentials")
+    data = request.form
+    flash(data)
     return redirect(url_for("user_views.index"))
 
 
