@@ -46,7 +46,8 @@ def signup_action():
         create_user(username=data["username"], password=data["password"])
         flash("Account Created!")
         return redirect(url_for("user_views.index"))
-    flash("Failed to create account. Please try again.")
+    data = request.form
+    flash(data)
     return redirect(url_for("user_views.signup_action"))
 
 
@@ -143,7 +144,7 @@ def post_spotting_action():
     location = get_user_location(session['user_id'])
     if form.validate_on_submit():
         data = request.form
-        spotting = create_spotting(
+        create_spotting(
             session['user_id'],
             data['bird_name'],
             location[0],
