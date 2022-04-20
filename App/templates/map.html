@@ -5,50 +5,53 @@
 {{ super() }}
 
 {% block content %}
-    <div class="row">
-        <div class="blue-grey darken-4 box" style="padding:10px; margin:10px; height:fit-content; box-shadow: -1px 2px 12px 0px rgba(0,0,0,0.74);">
-            <div class="row">
-                <form class="col s12 m8 offset-m2" method="POST" action="/map">
-                    {{ form.csrf_token }}
+<div class="row">
+    <div class="blue-grey darken-4 box"
+        style="padding:10px; margin:10px; height:fit-content; box-shadow: -1px 2px 12px 0px rgba(0,0,0,0.74);">
+        <div class="row">
+            <form class="col s12 m8 offset-m2" method="POST" action="/map">
+                {{ form.csrf_token }}
 
-                    <div class="input-field col s12 m8 offset-m2">
+                <div class="input-field col s12 m8 offset-m2">
 
-                      {{ form.bird_name(size=398, class="validate") }}
-                      {{ form.bird_name.label }}
-                    </div>
+                    {{ form.bird_name(size=398, class="validate") }}
 
-                    <div class="input-field col s12 m8 offset-m2">
-                      {{ form.submit }}
-                    </div>
-                </form>
-            </div>
+                </div>
+
+                <div class="input-field col s12 m8 offset-m2">
+                    {{ form.submit }}
+                </div>
+            </form>
         </div>
- {% if markers|length > 0 %}
-    <div  id="map" style="width:100%">
-        {{ googlemap(
-        "all-spottings-map",
-        lat=user_coords[0],
-        lng=user_coords[1],
-        markers=markers,
-        center_on_user_location=True,
-        streetview_control=False,
-        rotate_control=False,
-        style="height:80vh; width:auto; margin:10px; padding:5px; padding-top:25px; border-radius:10px; border:1px white solid;",
-        scale_control=False) }}
+        {% if markers|length > 0 %}
+        <div id="map" style="width:100%">
+            {{ googlemap(
+            "all-spottings-map",
+            lat=user_coords[0],
+            lng=user_coords[1],
+            markers=markers,
+            center_on_user_location=True,
+            streetview_control=False,
+            rotate_control=False,
+            style="height:80vh; width:auto; margin:10px; padding:5px; padding-top:25px; border-radius:10px; border:1px
+            white solid;",
+            scale_control=False) }}
+        </div>
+        {% else %}
+        <div id="map" style="width:100%">
+            {{ googlemap(
+            "all-spottings-map",
+            lat=user_coords[0],
+            lng=user_coords[1],
+            center_on_user_location=True,
+            streetview_control=False,
+            rotate_control=False,
+            style="height:80vh; width:auto; margin:10px; padding:5px; padding-top:25px; border-radius:10px; border:1px
+            white solid;",
+            scale_control=False) }}
+        </div>
+        {% endif %}
     </div>
- {% else %}
-    <div  id="map" style="width:100%">
-        {{ googlemap(
-        "all-spottings-map",
-        lat=user_coords[0],
-        lng=user_coords[1],
-        center_on_user_location=True,
-        streetview_control=False,
-        rotate_control=False,
-        style="height:80vh; width:auto; margin:10px; padding:5px; padding-top:25px; border-radius:10px; border:1px white solid;",
-        scale_control=False) }}
-    </div>
- {% endif %}
 
-    </div>
+</div>
 {% endblock %}

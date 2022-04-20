@@ -49,3 +49,7 @@
 div.login-form{
     color: white;
 }
+
+select.validate{
+    height: 300px;
+}
