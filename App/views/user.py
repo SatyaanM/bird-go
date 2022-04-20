@@ -13,11 +13,13 @@ from App.controllers import (
     SignUp,
     LogIn,
     PostSpotting,
+    SearchMap,
     create_user,
     authenticate,
     login_user,
     logout_user,
     get_spottings_by_user,
+    get_spottings_by_bird,
     get_all_spottings_json,
     create_spotting,
     get_user_location,
@@ -94,6 +96,7 @@ def spottings_page():
 @user_views.route('/map', methods=['GET'])
 @login_required
 def map_page():
+    form = SearchMap()
     spottings = get_all_spottings_json()
     user_coords = get_user_location(session['user_id'])
     markers = [{
@@ -101,7 +104,24 @@ def map_page():
         'lng': spotting['long'],
         'infobox': f"{spotting['bird_name']} spotted at {spotting['time']}. Details: {spotting['details']}"
     } for spotting in spottings]
-    return render_template('map.html', markers=markers, user_coords=user_coords)
+    return render_template('map.html', markers=markers, user_coords=user_coords, form=form)
+
+
+@user_views.route('/map', methods=['POST'])
+@login_required
+def search_map_page():
+    form = SearchMap()
+    if form.validate_on_submit():
+        data = request.form
+        bird_name = data['bird_name']
+        spottings = get_spottings_by_bird(bird_name)
+        user_coords = get_user_location(session['user_id'])
+        markers = [{
+            'lat': spotting['lat'],
+            'lng': spotting['long'],
+            'infobox': f"{spotting['bird_name']} spotted at {spotting['time']}. Details: {spotting['details']}"
+        } for spotting in spottings if spotting['bird_name'] == bird_name]
+        return render_template('map.html', markers=markers, user_coords=user_coords, form=form)
 
 
 @user_views.route('/post-spotting', methods=['GET'])

@@ -5,6 +5,24 @@
 {{ super() }}
 
 {% block content %}
+    <div class="row">
+        <div class="blue-grey darken-4 box" style="padding:10px; margin:10px; height:fit-content; box-shadow: -1px 2px 12px 0px rgba(0,0,0,0.74);">
+            <div class="row">
+                <form class="col s12 m8 offset-m2" method="POST" action="/map">
+                    {{ form.csrf_token }}
+
+                    <div class="input-field col s12 m8 offset-m2">
+
+                      {{ form.bird_name(size=398, class="validate") }}
+                      {{ form.bird_name.label }}
+                    </div>
+
+                    <div class="input-field col s12 m8 offset-m2">
+                      {{ form.submit }}
+                    </div>
+                </form>
+            </div>
+        </div>
  {% if markers|length > 0 %}
     <div  id="map" style="width:100%">
         {{ googlemap(
@@ -31,4 +49,6 @@
         scale_control=False) }}
     </div>
  {% endif %}
+
+    </div>
 {% endblock %}

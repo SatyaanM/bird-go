@@ -33,3 +33,12 @@ class PostSpotting(FlaskForm):
     bird_name = SelectField("Bird Name", choices=choices, validators=[DataRequired()])
     details = StringField("details", validators=[InputRequired()])
     submit = SubmitField("Post", render_kw={"class": "btn white-text"})
+
+
+class SearchMap(FlaskForm):
+    f = open('bird_species.json', 'r')
+    data = json.load(f)
+    f.close()
+    choices = [bird["English name"] for bird in data]
+    bird_name = SelectField("Bird Name", choices=choices, validators=[DataRequired()])
+    submit = SubmitField("Search", render_kw={"class": "btn white-text"})
