@@ -87,7 +87,7 @@ def spottings_page():
         'lng': spotting['long'],
         'infobox': f"{spotting['bird_name']} spotted at {spotting['time']}. Details: {spotting['details']}"
     } for spotting in spottings]
-
+    
     return render_template("spottings.html", spottings=spottings, markers=markers, user_coords=user_coords)
 
 

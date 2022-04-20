@@ -3,6 +3,7 @@
   <head>
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
@@ -38,6 +39,12 @@
           .then(json => console.log(json))
           .catch(err => console.log("Request Failed", err));
       }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+      });
+
       window.onload = getLocation();
 
   </script>
@@ -45,16 +52,24 @@
       <div class="nav-wrapper">
         <img src={{url_for("static",filename="logo.png")}} alt="Logo" style="width:50px; height:50px; margin:10px;">
         <a href="#!" class="brand-logo">Bird Go</a>
-
-            <ul id="nav-mobile" class="right">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li id="spot"><a href="/spottings">My Spottings</a></li>
                 <li id="map"><a href="/map">Map</a></li>
                 <li id="post"><a href="/post-spotting">Post Spotting</a></li>
                 <li id="logout"><a href="/logout">Signout</a></li>
+                <li><a href="https://www.instagram.com/birdgoofficial/" class="fa fa-instagram right"></a></li>
             </ul>
       </div>
 
     </nav>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="/spottings">My Spottings</a></li>
+      <li><a href="/map">Map</a></li>
+      <li><a href="/post-spotting">Post Spotting</a></li>
+      <li><a href="/logout">Signout</a></li>
+      <li><a href="https://www.instagram.com/birdgoofficial/">Bird Go Instagram</a></li>
+    </ul>
     
     {% with messages = get_flashed_messages() %}
     {% if messages %}
@@ -72,6 +87,23 @@
 
     <div class="container" id="content" style="width: 100%">{% block content %}{% endblock %}</div>
 
+    <script>
+      let tab = window.location.href.split('/').pop()
+      console.log(tab);
+      switch(tab) {
+          case "spottings":
+              document.getElementById("spot").className = "active";
+              break;
+          case "map":
+              document.getElementById("map").className = "active";
+              break;
+          case "post-spotting":
+              document.getElementById("post").className = "active";
+              break;
+          default:
+              break;
+        }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>
