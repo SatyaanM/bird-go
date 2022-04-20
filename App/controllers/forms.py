@@ -29,7 +29,7 @@ class PostSpotting(FlaskForm):
     f = open('bird_species.json', 'r')
     data = json.load(f)
     f.close()
-    choices = [(f'{bird["English name"]}, {bird["Scientific name"]}', bird["English name"]) for bird in data]
+    choices = [bird["English name"] for bird in data]
     bird_name = SelectField("Bird Name", choices=choices, validators=[DataRequired()])
     details = StringField("details", validators=[InputRequired()])
     submit = SubmitField("Post", render_kw={"class": "btn white-text"})
