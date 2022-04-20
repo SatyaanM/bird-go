@@ -7,45 +7,36 @@
 {% block content %}
     <div class="row">
 
-        <div class="col s6 offset-s3" style="text-align: center;">
-            <p>
-              Bird Go is a web app that allows users to post bird spottings. Users can view other people's spottings and record their own. Sign up and start spotting birds today!
-            </p>
-        </div>
+      <div class="col s10 offset-s1 blue-grey darken-4 box" style="height: fit-content; box-shadow: -1px 2px 12px 0px rgba(0,0,0,0.74);">
+          <div class="row">
+              <form id="myForm" class="col s12 m8 offset-m2" method="POST" action="/signup">
+                  {{ form.csrf_token }}
       
-        </div>
-        <div class="row">
-
-            <div class="col s6 offset-s3 blue-grey darken-4 box" style="height: fit-content; box-shadow: -1px 2px 12px 0px rgba(0,0,0,0.74);">
-                <div class="row">
-                    <form id="myForm" class="col s12 m8 offset-m2" method="POST" action="/signup">
-                        {{ form.csrf_token }}
-            
-                        <div class="input-field col s12 m8 offset-m2"> 
-                          {{ form.username(size=20, class="validate") }}
-                          {{ form.username.label }}
-                        </div>
-            
-                        <div class="input-field col s12 m8 offset-m2">
-                          {{ form.password(size=20, class="validate") }}
-                          {{ form.password.label }}
-                        </div>
-            
-                        <div class="input-field col s12 m8 offset-m2">
-                          {{ form.confirm(size=20, class="validate") }}
-                          {{ form.confirm.label }}
-                        </div>
-            
-                        <div class="input-field col s12 m8 offset-m2">
-                          {{form.submit}}
-                        </div> 
-                    </form>
-                </div>
-                <div class="row" style="text-align: center;">
-                    <p style="margin:0px;">Already have an account?</p>
-                    <a style="margin:0px;" href="/">Login</a>
-                </div>
-            </div>
+                  <div class="input-field col s12 m8 offset-m2"> 
+                    {{ form.username(size=20, class="validate") }}
+                    {{ form.username.label }}
+                  </div>
+      
+                  <div class="input-field col s12 m8 offset-m2">
+                    {{ form.password(size=20, class="validate") }}
+                    {{ form.password.label }}
+                  </div>
+      
+                  <div class="input-field col s12 m8 offset-m2">
+                    {{ form.confirm(size=20, class="validate") }}
+                    {{ form.confirm.label }}
+                  </div>
+      
+                  <div class="input-field col s12 m8 offset-m2">
+                    {{form.submit}}
+                  </div> 
+              </form>
+          </div>
+          <div class="row" style="text-align: center;">
+              <p style="margin:0px;">Already have an account?</p>
+              <a style="margin:0px;" href="/">Login</a>
+          </div>
+      </div>
 
     </div>
 {% endblock %}

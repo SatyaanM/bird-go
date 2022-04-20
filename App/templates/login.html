@@ -5,48 +5,34 @@
 {{ super() }}
 
 {% block content %}
+    
     <div class="row">
 
-            <div class="row" style="text-align: center;">
-                <h1>Bird Go</h1>
-            </div>
+        <div class="col s10 offset-s1 blue-grey darken-4 box" style="height: fit-content; box-shadow: -1px 2px 12px 0px rgba(0,0,0,0.74);">
             <div class="row">
-                <img src={{url_for("static",filename="logo.png")}} alt="Logo" style="border-radius: 50%;
-                padding-top: 10px;
-                width:170px;
-                height:170px;
-                display: block;
-                margin-left: auto; 
-                margin-right: auto;">
+                <form class="col s12 m8 offset-m2" method="POST" action="/login">
+                    {{ form.csrf_token }}
+        
+                    <div class="input-field col s12 m8 offset-m2"> 
+                        {{ form.username(size=20, class="validate") }}
+                        {{ form.username.label }}
+                    </div>
+        
+                    <div class="input-field col s12 m8 offset-m2">
+                        {{ form.password(size=20, class="validate") }}
+                        {{ form.password.label }}
+                    </div>
+        
+                    <div class="input-field col s12 m8 offset-m2">
+                        {{form.submit}}
+                    </div> 
+                </form>
+            </div>
+            <div class="row" style="text-align: center;">
+                <p style="margin:0px;">Don't have an account?</p>
+                <a style="margin:0px;" href="/signup">Sign Up</a>
             </div>
         </div>
-        <div class="row">
 
-            <div class="col s6 offset-s3 blue-grey darken-4 box" style="height: fit-content; box-shadow: -1px 2px 12px 0px rgba(0,0,0,0.74);">
-                <div class="row">
-                    <form class="col s12 m8 offset-m2" method="POST" action="/login">
-                        {{ form.csrf_token }}
-            
-                        <div class="input-field col s12 m8 offset-m2"> 
-                          {{ form.username(size=20, class="validate") }}
-                          {{ form.username.label }}
-                        </div>
-            
-                        <div class="input-field col s12 m8 offset-m2">
-                          {{ form.password(size=20, class="validate") }}
-                          {{ form.password.label }}
-                        </div>
-            
-                        <div class="input-field col s12 m8 offset-m2">
-                          {{form.submit}}
-                        </div> 
-                    </form>
-                </div>
-                <div class="row" style="text-align: center;">
-                    <p style="margin:0px;">Don't have an account?</p>
-                    <a style="margin:0px;" href="/signup">Sign Up</a>
-                </div>
-            </div>
-
-        </div>
+    </div>
 {% endblock %}

@@ -34,3 +34,18 @@
 .fa-instagram {
     background: #125688;
     color: white;
+}
+
+@media (max-width: 800px) {
+    #info_box{
+        height:100px;
+    }
+}
+
+#info_box{
+    height:80vh;
+}
+
+div.login-form{
+    color: white;
+}
