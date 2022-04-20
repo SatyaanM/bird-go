@@ -1,6 +1,7 @@
+import json
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField
-from wtforms.validators import InputRequired, EqualTo
+from wtforms import StringField, PasswordField, SubmitField, SelectField
+from wtforms.validators import InputRequired, EqualTo, DataRequired
 
 
 class SignUp(FlaskForm):
@@ -25,6 +26,10 @@ class LogIn(FlaskForm):
 
 
 class PostSpotting(FlaskForm):
-    bird_name = StringField("bird_name", validators=[InputRequired()])
+    f = open('bird_species.json', 'r')
+    data = json.load(f)
+    f.close()
+    choices = [(f'{bird["English name"]}, {bird["Scientific name"]}', bird["English name"]) for bird in data]
+    bird_name = SelectField("Bird Name", choices=choices, validators=[DataRequired()])
     details = StringField("details", validators=[InputRequired()])
     submit = SubmitField("Post", render_kw={"class": "btn white-text"})
