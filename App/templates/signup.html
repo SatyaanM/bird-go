@@ -7,17 +7,16 @@
 {% block content %}
     <div class="row">
 
-            <div class="col s6 offset-s3" style="text-align: center;">
-                <p>
-                  Bird Go is a web app that allows users to post bird spottings. Users can view other people's spottings and record their own. Sign up and start spotting birds today!
-                </p>
-            </div>
-
+        <div class="col s6 offset-s3" style="text-align: center;">
+            <p>
+              Bird Go is a web app that allows users to post bird spottings. Users can view other people's spottings and record their own. Sign up and start spotting birds today!
+            </p>
+        </div>
       
         </div>
         <div class="row">
 
-            <div class="col s6 offset-s3 blue-grey darken-4 box" style="height: fit-content;">
+            <div class="col s6 offset-s3 blue-grey darken-4 box" style="height: fit-content; box-shadow: -1px 2px 12px 0px rgba(0,0,0,0.74);">
                 <div class="row">
                     <form id="myForm" class="col s12 m8 offset-m2" method="POST" action="/signup">
                         {{ form.csrf_token }}
@@ -48,5 +47,5 @@
                 </div>
             </div>
 
-        </div>
+    </div>
 {% endblock %}
