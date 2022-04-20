@@ -1,0 +1,67 @@
+{% extends "postlogin.html" %}
+{% block title %}Bird Go: My Spottings{% endblock %}
+{% block page %}My Spottings{% endblock %}
+
+{{ super() }}
+
+{% block content %}
+    <div class="row blue-grey darken-4 box" style="padding: 10px; margin: 10px; height:fit-content; box-shadow: -1px 2px 12px 0px rgba(0,0,0,0.74);">
+        <div class="row">
+            <h1 style="color:white">{{ session['username'] }}'s spottings:</h1>
+        </div>
+        <div class="row">
+            <p style="color:white">Total spottings: {{ spottings|length }}</p>
+        </div>
+
+        <div style="border: 1px white solid; padding: 5px; border-radius: 10px;">
+            <table class="collection with-header highlight responsive-table" style="margin:0px;">
+                <thead>
+                    <tr class="collection-header">
+                        <th>Bird</th>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
+                        <th>Details</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% if spottings|length > 0 %}
+                    {% for spotting in spottings %}
+                        <tr class="collection-item">
+                            <td>{{ spotting.bird_name }}</td>
+                            <td>{{ spotting.lat }}</td>
+                            <td>{{ spotting.long }}</td>
+                            <td>{{ spotting.details }}</td>
+                            <td>{{ spotting.time }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+                </table>
+
+                <div class="map" style="margin-top: 10px; border: 1px white solid; border-radius: 10px; padding:0px;">
+                            {{ googlemap(
+                                        "my-spottings-map",
+                                        lat=user_coords[0],
+                                        lng=user_coords[1],
+                                        markers=markers,
+                                        center_on_user_location=True,
+                                        streetview_control=False,
+                                        rotate_control=False,
+                                        style="height:400px;width:90%;margin-left:auto;margin-right:auto;padding:5px;padding-top:25px;",
+                                        scale_control=False) }}
+
+                </div>
+
+                {% else %}
+                <tr class="collection-item">
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                {% endif %}
+                
+        </div>
+    </div>
+{% endblock %}

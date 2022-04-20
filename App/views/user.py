@@ -53,7 +53,7 @@ def index():
     return render_template("login.html", form=form)
 
 
-# if request to /login is a POST, then get form info, validate, login and redirects to user_views.account_page
+# if request to /login is a POST, then get form info, validate, login and redirects to user_views.spottings_page
 @user_views.route("/login", methods=["POST"])
 def login_action():
     form = LogIn()
@@ -65,7 +65,7 @@ def login_action():
             login_user(user, False)
             session['username'] = user.username
             session['user_id'] = user.id
-            return redirect(url_for("user_views.account_page"))
+            return redirect(url_for("user_views.spottings_page"))
         flash("Invalid Credentials")
         return redirect(url_for("user_views.index"))
 
@@ -76,10 +76,10 @@ def logout_action():
     return redirect(url_for("user_views.index"))
 
 
-# user must be logged in to view account
-@user_views.route("/account", methods=["GET"])
+# user must be logged in to view account spottings
+@user_views.route("/spottings", methods=["GET"])
 @login_required
-def account_page():
+def spottings_page():
     user_coords = get_user_location(session['user_id'])
     spottings = get_spottings_by_user(session['user_id'])
     markers = [{
@@ -88,7 +88,7 @@ def account_page():
         'infobox': f"{spotting['bird_name']} spotted at {spotting['time']}. Details: {spotting['details']}"
     } for spotting in spottings]
 
-    return render_template("account.html", spottings=spottings, markers=markers, user_coords=user_coords)
+    return render_template("spottings.html", spottings=spottings, markers=markers, user_coords=user_coords)
 
 
 @user_views.route('/map', methods=['GET'])
@@ -126,4 +126,4 @@ def post_spotting_action():
             location[1],
             data['details']
         )
-        return redirect(url_for('user_views.account_page'))
+        return redirect(url_for('user_views.spottings_page'))
