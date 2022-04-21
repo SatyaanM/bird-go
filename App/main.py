@@ -5,7 +5,6 @@ from flask import Flask
 from flask_cors import CORS
 from flask_googlemaps import GoogleMaps
 from flask_login import LoginManager
-from flask_uploads import DOCUMENTS, IMAGES, TEXT, UploadSet, configure_uploads
 
 from App.controllers import setup_jwt, load_user_from_id
 from App.database import init_db, get_migrate
@@ -24,9 +23,6 @@ def loadConfig(app, config):
     if app.config["ENV"] == "DEVELOPMENT":
         app.config.from_object("App.config")
     else:
-        # uri = os.getenv("DATABASE_URL")  # or other relevant config var
-        # if uri.startswith("postgres://"):
-        #     uri = uri.replace("postgres://", "postgresql://", 1)
         app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URI")
         app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
         app.config["JWT_EXPIRATION_DELTA"] = timedelta(
@@ -46,9 +42,6 @@ def create_app(config={}):
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
     app.config["TEMPLATES_AUTO_RELOAD"] = True
     app.config["PREFERRED_URL_SCHEME"] = "https"
-    app.config["UPLOADED_PHOTOS_DEST"] = "App/uploads"
-    photos = UploadSet("photos", TEXT + DOCUMENTS + IMAGES)
-    configure_uploads(app, photos)
     add_views(app, views)
     init_db(app)
     setup_jwt(app)
