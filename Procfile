@@ -1,1 +1,1 @@
-web: gunicorn -w 4 App.main:app --preload
+web: gunicorn -w 1 -t 3 -b 0.0.0.0:8080 App.main:app
