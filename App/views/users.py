@@ -8,7 +8,7 @@ from flask import (
     session
 )
 from flask_login import login_required
-from flask_wtf import csrf
+# from flask_wtf import csrf
 from App.controllers import (
     SignUp,
     LogIn,
@@ -86,7 +86,7 @@ def logout_action():
 # user must be logged in to view account spottings
 @user_views.route("/spottings", methods=["GET", "POST"])
 @login_required
-@csrf.exempt
+# @csrf.exempt
 def spottings_page():
     user_coords = get_user_location(session['user_id'])
     spottings = get_spottings_by_user(session['user_id'])
