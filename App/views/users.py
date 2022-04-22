@@ -70,7 +70,6 @@ def login_action():
             login_user(user, False)
             session['uname'] = user.uname
             session['user_id'] = user.id
-            flash(f'{session["uname"]}{session["uid"]}')
             return redirect(url_for("user_views.spottings_page"))
         flash("Invalid Credentials")
         return redirect(url_for("user_views.index"))
@@ -85,7 +84,7 @@ def logout_action():
 
 
 # user must be logged in to view account spottings
-@user_views.route("/spottings", methods=["GET"])
+@user_views.route("/spottings", methods=["GET", "POST"])
 @login_required
 def spottings_page():
     user_coords = get_user_location(session['user_id'])
