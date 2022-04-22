@@ -29,7 +29,7 @@ def loadConfig(app, config):
             days=int(os.environ.get("JWT_EXPIRATION_DELTA"))
         )
         app.config["DEBUG"] = True
-        app.config["ENV"] = os.environ.get("ENV")
+        app.config["ENV"] = "DEVELOPMENT"
         app.config["GOOGLEMAPS_KEY"] = os.environ.get("GOOGLEMAPS_KEY")
     for key, value in config.items():
         app.config[key] = config[key]
