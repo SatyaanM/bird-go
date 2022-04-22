@@ -33,6 +33,7 @@ def loadConfig(app, config):
         app.config["ENV"] = os.environ.get("ENV")
         app.config["GOOGLEMAPS_KEY"] = os.environ.get("GOOGLEMAPS_KEY")
         app.config['SESSION_COOKIE_SECURE'] = True
+        app.config.update( SESSION_COOKIE_NAME='MyApp-Session', )
     for key, value in config.items():
         app.config[key] = config[key]
 
