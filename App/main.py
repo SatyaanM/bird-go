@@ -42,11 +42,12 @@ def create_app(config={}):
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
     app.config["TEMPLATES_AUTO_RELOAD"] = True
     app.config["PREFERRED_URL_SCHEME"] = "https"
+    app.config["WTF_CSRF_ENABLED"] = False
     add_views(app, views)
     init_db(app)
     setup_jwt(app)
-    with app.app_context():
-        return app
+    app.app_context().push()
+    return app
 
 
 app = create_app()
@@ -60,4 +61,3 @@ def load_user(user_id):
 
 
 migrate = get_migrate(app)
-

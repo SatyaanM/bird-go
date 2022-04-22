@@ -84,7 +84,7 @@ def logout_action():
 
 
 # user must be logged in to view account spottings
-@user_views.route("/spottings", methods=["GET", "POST"])
+@user_views.route("/spottings", methods=["GET"])
 @login_required
 def spottings_page():
     user_coords = get_user_location(session['user_id'])
