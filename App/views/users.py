@@ -8,7 +8,7 @@ from flask import (
     session
 )
 from flask_login import login_required
-
+from flask_googlemaps import googlemap, Map
 from App.controllers import (
     SignUp,
     LogIn,
@@ -94,7 +94,16 @@ def spottings_page():
         'lng': spotting['long'],
         'infobox': f"{spotting['bird_name']} spotted at {spotting['time']}. Details: {spotting['details']}"
     } for spotting in spottings]
-    return render_template("spottings.html", spottings=spottings, markers=markers, user_coords=user_coords)
+    testmap = googlemap(identifier="myspottingsmaptest",
+                        lat=user_coords[0],
+                        lng=user_coords[1],
+                        markers=markers,
+                        center_on_user_location=True,
+                        streetview_control=False,
+                        rotate_control=False,
+                        style="height:400px;margin-left:auto;margin-right:auto;padding:5px;padding-top:25px;border-radius: 10px; border: 1px white solid;",
+                        scale_control=False)
+    return render_template("spottings.html", spottings=spottings, testmap=testmap)
 
 
 @user_views.route('/map', methods=['GET'])
