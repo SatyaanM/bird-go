@@ -70,11 +70,11 @@ def login_action():
             login_user(user, False)
             session['uname'] = user.uname
             session['user_id'] = user.id
+            flash(f'{session["uname"]}{session["uid"]}')
             return redirect(url_for("user_views.spottings_page"))
         flash("Invalid Credentials")
         return redirect(url_for("user_views.index"))
-    data = request.form
-    # flash(data)
+    flash(form.errors)
     return redirect(url_for("user_views.index"))
 
 
@@ -95,7 +95,6 @@ def spottings_page():
         'lng': spotting['long'],
         'infobox': f"{spotting['bird_name']} spotted at {spotting['time']}. Details: {spotting['details']}"
     } for spotting in spottings]
-    
     return render_template("spottings.html", spottings=spottings, markers=markers, user_coords=user_coords)
 
 
