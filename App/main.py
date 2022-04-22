@@ -25,9 +25,6 @@ def loadConfig(app, config):
     if app.config["ENV"] == "DEVELOPMENT":
         app.config.from_object("App.config")
     else:
-        # uri = os.getenv("DATABASE_URL")  # or other relevant config var
-        # if uri.startswith("postgres://"):
-        #     uri = uri.replace("postgres://", "postgresql://", 1)
         app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URI")
         app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
         app.config["JWT_EXPIRATION_DELTA"] = timedelta(
@@ -36,6 +33,7 @@ def loadConfig(app, config):
         app.config["DEBUG"] = os.environ.get("ENV").upper() != "PRODUCTION"
         app.config["ENV"] = os.environ.get("ENV")
         app.config["GOOGLEMAPS_KEY"] = os.environ.get("GOOGLEMAPS_KEY")
+        app.config["SESSION_COOKIE_SECURE"] = True
     for key, value in config.items():
         app.config[key] = config[key]
 
