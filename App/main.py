@@ -45,8 +45,8 @@ def create_app(config={}):
     add_views(app, views)
     init_db(app)
     setup_jwt(app)
-    app.app_context().push()
-    return app
+    with app.app_context():
+        return app
 
 
 app = create_app()
