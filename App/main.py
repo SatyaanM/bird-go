@@ -6,6 +6,7 @@ from flask_cors import CORS
 from flask_googlemaps import GoogleMaps
 from flask_login import LoginManager
 from flask_uploads import DOCUMENTS, IMAGES, TEXT, UploadSet, configure_uploads
+from flask_wtf.csrf import CSRFProtect
 
 from App.controllers import setup_jwt, load_user_from_id
 from App.database import init_db, get_migrate
@@ -58,6 +59,7 @@ def create_app(config={}):
 
 app = create_app()
 login_manager = LoginManager(app)
+csrf = CSRFProtect(app)
 GoogleMaps(app)
 
 

@@ -5,8 +5,8 @@
 {{ super() }}
 
 {% block content %}
-    <form class="spottings-form" action="/spottings" method="POST">
-        <input type="hidden" name="csrf_token" value="{{ session['csrf_token'] }}" />
+    <form method="post">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
     </form>
     <div class="row blue-grey darken-4 box" style="padding: 10px; margin: 10px; height:fit-content; box-shadow: -1px 2px 12px 0px rgba(0,0,0,0.74);">
         <div class="row">
