@@ -8,7 +8,7 @@ from flask import (
     session
 )
 from flask_login import login_required
-from flask_googlemaps import googlemap
+
 from App.controllers import (
     SignUp,
     LogIn,
@@ -46,8 +46,6 @@ def signup_action():
         create_user(uname=data["uname"], password=data["password"])
         flash("Account Created!")
         return redirect(url_for("user_views.index"))
-    data = request.form
-    # flash(data)
     return redirect(url_for("user_views.signup_action"))
 
 
@@ -73,7 +71,6 @@ def login_action():
             return redirect(url_for("user_views.spottings_page"))
         flash("Invalid Credentials")
         return redirect(url_for("user_views.index"))
-    flash(form.errors)
     return redirect(url_for("user_views.index"))
 
 
@@ -94,17 +91,7 @@ def spottings_page():
         'lng': spotting['long'],
         'infobox': f"{spotting['bird_name']} spotted at {spotting['time']}. Details: {spotting['details']}"
     } for spotting in spottings]
-    test = googlemap(
-        "my-spottings-map",
-        lat=user_coords[0],
-        lng=user_coords[1],
-        markers=markers,
-        center_on_user_location=True,
-        streetview_control=False,
-        rotate_control=False,
-        style="height:400px;margin-left:auto;margin-right:auto;padding:5px;padding-top:25px;border-radius: 10px; border: 1px white solid;",
-        scale_control=False)
-    return render_template("spottings.html", spottings=spottings, markers=markers, user_coords=user_coords, test=test)
+    return render_template("spottings.html", spottings=spottings, markers=markers, user_coords=user_coords)
 
 
 @user_views.route('/map', methods=['GET'])
