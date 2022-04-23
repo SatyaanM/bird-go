@@ -30,7 +30,7 @@ def loadConfig(app, config):
         )
         app.config["DEBUG"] = True
         app.config["ENV"] = "DEVELOPMENT"
-        app.config["GOOGLEMAPS_KEY"] = os.environ.get("GOOGLEMAPS_KEY")
+        # app.config["GOOGLEMAPS_KEY"] = os.environ.get("GOOGLEMAPS_KEY")
     for key, value in config.items():
         app.config[key] = config[key]
 
@@ -52,7 +52,7 @@ def create_app(config={}):
 
 app = create_app()
 login_manager = LoginManager(app)
-GoogleMaps(app)
+GoogleMaps(app, key=os.environ.get("GOOGLEMAPS_KEY"))
 
 
 @login_manager.user_loader
