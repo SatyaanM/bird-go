@@ -5,7 +5,8 @@
 {{ super() }}
 
 {% block content %}
-    <div class="row blue-grey darken-4 box" style="padding: 10px; margin: 10px; height:fit-content; box-shadow: -1px 2px 12px 0px rgba(0,0,0,0.74);">
+    <div class="row blue-grey darken-4 box"
+         style="padding: 10px; margin: 10px; height:fit-content; box-shadow: -1px 2px 12px 0px rgba(0,0,0,0.74);">
         <div class="row">
             <h2 style="color:white">{{ session['uname'] }}'s spottings:</h2>
         </div>
@@ -16,13 +17,13 @@
         <div style="border: 1px white solid; padding: 5px; border-radius: 10px;">
             <table class="collection with-header highlight responsive-table" style="margin:0px;">
                 <thead>
-                    <tr class="collection-header">
-                        <th>Bird</th>
-                        <th>Latitude</th>
-                        <th>Longitude</th>
-                        <th>Details</th>
-                        <th>Time</th>
-                    </tr>
+                <tr class="collection-header">
+                    <th>Bird</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                    <th>Details</th>
+                    <th>Time</th>
+                </tr>
                 </thead>
                 <tbody>
                 {% if spottings|length > 0 %}
@@ -35,36 +36,36 @@
                             <td>{{ spotting.time }}</td>
                         </tr>
                     {% endfor %}
-                </tbody>
-                </table>
+                    </tbody>
+                    </table>
+                    {#                    <div class="map" style="margin-top: 10px">#}
+                    {#                        {{ testmap }}#}
+                    {#                    </div>#}
+
                     <div class="map" style="margin-top: 10px">
-                        {{ testmap }}
+                        {{ googlemap(
+                                        "my-spottings-map",
+                                        lat=user_coords[0],
+                                        lng=user_coords[1],
+                                        markers=markers,
+                                        center_on_user_location=True,
+                                        streetview_control=False,
+                                        rotate_control=False,
+                                        style="height:400px;margin-left:auto;margin-right:auto;padding:5px;padding-top:25px;border-radius: 10px; border: 1px white solid;",
+                                        scale_control=False) }}
+
                     </div>
 
-{#                <div class="map" style="margin-top: 10px">#}
-{#                            {{ googlemap(#}
-{#                                        "my-spottings-map",#}
-{#                                        lat=user_coords[0],#}
-{#                                        lng=user_coords[1],#}
-{#                                        markers=markers,#}
-{#                                        center_on_user_location=True,#}
-{#                                        streetview_control=False,#}
-{#                                        rotate_control=False,#}
-{#                                        style="height:400px;margin-left:auto;margin-right:auto;padding:5px;padding-top:25px;border-radius: 10px; border: 1px white solid;",#}
-{#                                        scale_control=False) }}#}
-{##}
-{#                </div>#}
-
                 {% else %}
-                <tr class="collection-item">
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
+                    <tr class="collection-item">
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
                 {% endif %}
-                
+
         </div>
     </div>
 {% endblock %}
