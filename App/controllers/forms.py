@@ -26,7 +26,7 @@ class LogIn(FlaskForm):
 
 
 class PostSpotting(FlaskForm):
-    f = open('bird_species.json', 'r')
+    f = open("bird_species.json", "r")
     data = json.load(f)
     f.close()
     choices = [bird["English name"] for bird in data]
@@ -36,7 +36,7 @@ class PostSpotting(FlaskForm):
 
 
 class SearchMap(FlaskForm):
-    f = open('bird_species.json', 'r')
+    f = open("bird_species.json", "r")
     data = json.load(f)
     f.close()
     choices = [bird["English name"] for bird in data]

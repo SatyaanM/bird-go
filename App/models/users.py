@@ -4,7 +4,7 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from App.database import db
 
 
-class Users (db.Model, UserMixin):
+class Users(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     uname = db.Column(db.String(120), nullable=False)
     password = db.Column(db.String(120), nullable=False)
